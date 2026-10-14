@@ -3,11 +3,12 @@ import { useEffect, useState, type ReactNode } from "react";
 import { ArrowUpRight, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/wilbucks-logo.png.asset.json";
-import { email, linkedin } from "@/lib/wilbucks-content";
+import { email, linkedin, simonLinkedin } from "@/lib/wilbucks-content";
 
 const navigation = [
-  { label: "Home", to: "/" }, { label: "About Marie", to: "/marie-wilcox" },
-  { label: "Expertise", to: "/expertise" }, { label: "Contact", to: "/contact" },
+  { label: "Home", to: "/" }, { label: "About", to: "/about" },
+  { label: "Expertise", to: "/expertise" }, { label: "Our directors", to: "/directors" },
+  { label: "Insights & Media", to: "/press-coverage" }, { label: "Contact", to: "/contact" },
 ] as const;
 
 export function WilbucksShell({ children }: { children: ReactNode }) {
@@ -33,18 +34,18 @@ export function WilbucksShell({ children }: { children: ReactNode }) {
       {open && <nav id="mobile-navigation" className="mobile-menu" aria-label="Mobile navigation">{navigation.map(item => <Link key={item.to} to={item.to} onClick={() => setOpen(false)} aria-current={pathname === item.to ? "page" : undefined}>{item.label}<ArrowUpRight size={18} /></Link>)}</nav>}
     </header>
     <main id="main-content" tabIndex={-1}>{children}</main>
-    <footer className="site-footer"><div className="page-container footer-top"><Link to="/" className="brand"><img src={logo.url} width="42" height="40" alt="" /><span>Wilbucks.</span></Link><p>Technology. Market relevance.<br />Commercial growth.</p><a href={linkedin} target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRight size={16} /></a></div><div className="page-container footer-bottom"><span>© 2026 Wilbucks</span><span>Independent perspective. Connected thinking.</span><a href="#main-content">Back to top ↑</a></div></footer>
+    <footer className="site-footer"><div className="page-container footer-top"><Link to="/" className="brand"><img src={logo.url} width="42" height="40" alt="" /><span>Wilbucks.</span></Link><p>Independent sales & marketing consultancy.<br />Clear thinking for technology, markets and growth.</p><div className="footer-links"><Link to="/about">About Wilbucks</Link><Link to="/directors">Our directors</Link><a href={linkedin} target="_blank" rel="noopener noreferrer">Marie on LinkedIn <ArrowUpRight size={14} /></a><a href={simonLinkedin} target="_blank" rel="noopener noreferrer">Simon on LinkedIn <ArrowUpRight size={14} /></a></div></div><div className="page-container footer-bottom"><span>© 2026 Wilbucks</span><span>Technology. Customers. Commercial priorities.</span><a href="#main-content">Back to top ↑</a></div></footer>
   </>;
 }
 
 export function ContactBand() {
-  return <section className="contact-band" id="subscribe"><div className="page-container contact-inner" data-reveal><div><p className="eyebrow">A good place to start</p><h2>What’s your next<br />commercial challenge?</h2></div><div><p>Let’s talk about your technology,<br />your market and where you want to go.</p><Button asChild variant="editorial" size="editorial"><a href={email}>Start a conversation <ArrowUpRight /></a></Button></div></div></section>;
+  return <section className="contact-band" id="subscribe"><div className="page-container contact-inner" data-reveal><div><p className="eyebrow">Contact Wilbucks</p><h2>What do you need your<br />market to understand?</h2></div><div><p>Tell us about your technology, the buyers you want to reach and the challenge you are working through.</p><Button asChild variant="editorial" size="editorial"><a href={email}>Contact Wilbucks via Marie <ArrowUpRight /></a></Button></div></div></section>;
 }
 
 export function SectionHeading({ number, label, title, children }: { number: string; label: string; title: string; children?: ReactNode }) {
   return <div className="section-heading" data-reveal><p className="eyebrow"><span>{number} /</span> {label}</p><div><h2>{title}</h2>{children}</div></div>;
 }
 
-export function TextLink({ children, to }: { children: ReactNode; to: "/" | "/marie-wilcox" | "/expertise" | "/contact" }) {
+export function TextLink({ children, to }: { children: ReactNode; to: "/" | "/marie-wilcox" | "/expertise" | "/contact" | "/about" | "/directors" | "/simon-wilcox" | "/press-coverage" }) {
   return <Button asChild variant="link" className="text-link"><Link to={to}>{children} <ArrowRight /></Link></Button>;
 }

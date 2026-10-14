@@ -10,18 +10,32 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DirectorsRouteImport } from './routes/directors'
 import { Route as ExpertiseRouteImport } from './routes/expertise'
 import { Route as MarieWilcoxRouteImport } from './routes/marie-wilcox'
+import { Route as PressCoverageRouteImport } from './routes/press-coverage'
+import { Route as SimonWilcoxRouteImport } from './routes/simon-wilcox'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DirectorsRoute = DirectorsRouteImport.update({
+  id: '/directors',
+  path: '/directors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ExpertiseRoute = ExpertiseRouteImport.update({
@@ -34,39 +48,90 @@ const MarieWilcoxRoute = MarieWilcoxRouteImport.update({
   path: '/marie-wilcox',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PressCoverageRoute = PressCoverageRouteImport.update({
+  id: '/press-coverage',
+  path: '/press-coverage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SimonWilcoxRoute = SimonWilcoxRouteImport.update({
+  id: '/simon-wilcox',
+  path: '/simon-wilcox',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/directors': typeof DirectorsRoute
   '/expertise': typeof ExpertiseRoute
   '/marie-wilcox': typeof MarieWilcoxRoute
+  '/press-coverage': typeof PressCoverageRoute
+  '/simon-wilcox': typeof SimonWilcoxRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/directors': typeof DirectorsRoute
   '/expertise': typeof ExpertiseRoute
   '/marie-wilcox': typeof MarieWilcoxRoute
+  '/press-coverage': typeof PressCoverageRoute
+  '/simon-wilcox': typeof SimonWilcoxRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
+  '/directors': typeof DirectorsRoute
   '/expertise': typeof ExpertiseRoute
   '/marie-wilcox': typeof MarieWilcoxRoute
+  '/press-coverage': typeof PressCoverageRoute
+  '/simon-wilcox': typeof SimonWilcoxRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/expertise' | '/marie-wilcox'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/directors'
+    | '/expertise'
+    | '/marie-wilcox'
+    | '/press-coverage'
+    | '/simon-wilcox'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/expertise' | '/marie-wilcox'
-  id: '__root__' | '/' | '/contact' | '/expertise' | '/marie-wilcox'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/directors'
+    | '/expertise'
+    | '/marie-wilcox'
+    | '/press-coverage'
+    | '/simon-wilcox'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/directors'
+    | '/expertise'
+    | '/marie-wilcox'
+    | '/press-coverage'
+    | '/simon-wilcox'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
+  DirectorsRoute: typeof DirectorsRoute
   ExpertiseRoute: typeof ExpertiseRoute
   MarieWilcoxRoute: typeof MarieWilcoxRoute
+  PressCoverageRoute: typeof PressCoverageRoute
+  SimonWilcoxRoute: typeof SimonWilcoxRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -78,11 +143,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/directors': {
+      id: '/directors'
+      path: '/directors'
+      fullPath: '/directors'
+      preLoaderRoute: typeof DirectorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/expertise': {
@@ -99,14 +178,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MarieWilcoxRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/press-coverage': {
+      id: '/press-coverage'
+      path: '/press-coverage'
+      fullPath: '/press-coverage'
+      preLoaderRoute: typeof PressCoverageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/simon-wilcox': {
+      id: '/simon-wilcox'
+      path: '/simon-wilcox'
+      fullPath: '/simon-wilcox'
+      preLoaderRoute: typeof SimonWilcoxRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
+  DirectorsRoute: DirectorsRoute,
   ExpertiseRoute: ExpertiseRoute,
   MarieWilcoxRoute: MarieWilcoxRoute,
+  PressCoverageRoute: PressCoverageRoute,
+  SimonWilcoxRoute: SimonWilcoxRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
