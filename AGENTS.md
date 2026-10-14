@@ -9,6 +9,8 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep this profile as a single scrolling index route with accessible anchor navigation because it is an integration prototype.
+- Use dedicated Home, Marie profile, Expertise and Contact routes under a shared Wilbucks shell because the approved refresh replaces the single-page prototype.
 - Define editorial styling and semantic colors in the global stylesheet and use Button variants for actions to keep presentation consistent.
 - Keep profile structured data limited to supplied identity and expertise; use relative canonical metadata until the final integration path is confirmed.
+- Keep browser-safe typed content and metadata in shared modules so expertise and verified media remain consistent across pages without a database.
+- Keep production sitemap and redirect configuration in launch templates, not served with an unapproved host, because this preview must not replace the live site.
