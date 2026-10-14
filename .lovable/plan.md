@@ -68,10 +68,10 @@ Director, Wilbucks. Senior technology marketing leader with experience across cy
 **Action:** Meet Marie
 
 **Simon Wilcox**  
-Director, Wilbucks. Read Simon’s profile and connect with him on LinkedIn.  
+Director, Wilbucks. A technology and cybersecurity perspective, with a public professional focus on data intelligence in security and government.  
 **Action:** Meet Simon
 
-*Review note, not website copy: expand Simon’s introduction with technology and cybersecurity experience only when verified or explicitly confirmed. Do not leave him out or invent a matching-length biography.*
+*Review note, not website copy: public material from the exact LinkedIn account supports this concise introduction. Further career detail needs confirmation; do not invent a matching-length biography.*
 
 **Company enquiry**
 
@@ -153,12 +153,14 @@ Retain the selected ASOS commentary with Binalyze attribution and AFP syndicatio
 **Simon Wilcox**  
 *Director, Wilbucks*
 
-Simon Wilcox is a director of Wilbucks. His professional background can be found on LinkedIn.
+Simon Wilcox is a director of Wilbucks. His professional focus includes data intelligence in security and government. His public LinkedIn contributions address technology and cybersecurity, including the NCSC’s Cyber Assessment Framework.
 
 **Action:** Simon on LinkedIn  
 https://www.linkedin.com/in/simon-wilcox/
 
-This deliberately short draft can be used without adding unverified career claims. The supplied reference identifies the Godalming-based Simon and mentions 20 years at Detica and BAE Systems. Those specifics, technology/cybersecurity experience, consulting experience and the description of translating technical challenges for business stakeholders need source verification or Simon’s confirmation before entering final public copy. No inferred chronology, qualifications, job titles or achievements. Confirmation notes belong in the review, not on the website.
+**Source check and limits, not website copy:** Public material from the exact profile identifies Simon in Godalming and describes his focus as “Data Intelligence in Security and Government”. A public post from the same account discusses the NCSC’s Cyber Assessment Framework. The full employment chronology was inaccessible. The supplied claim of 20 years at Detica and BAE Systems was not independently verified and is excluded from public draft copy. Consulting history and wording about translating technical challenges into business outcomes also need Simon’s confirmation. Do not import current employer claims, recommendations, qualifications, role dates or achievements merely to expand the page.
+
+Sources: [exact LinkedIn profile](https://www.linkedin.com/in/simon-wilcox/) and [Cyber Assessment Framework post](https://www.linkedin.com/posts/simon-wilcox_heard-of-the-ncscs-cyber-assessment-framework-activity-7364241708294840320-9Mkf). These are public-profile checks, not a full CV verification. The director relationship is supplied by you.
 
 ### Insights & Media
 
@@ -220,6 +222,6 @@ Label both links as personal profiles. Do not imply either is a Wilbucks company
 ## Review items
 
 - Approve the company proposition, draft copy and eight-page structure.
-- Confirm Simon’s expanded biography after the source-access check. The concise director-only version is the safe default.
+- Confirm Simon’s expanded biography, particularly the Detica/BAE Systems tenure and business-facing consulting description. Use the concise, source-supported version above unless more detail is confirmed.
 - A genuine Simon photograph is optional, not a blocker.
 - Existing legal details, business email, form/newsletter usage and final hosting still require confirmation before any separately authorised launch.
