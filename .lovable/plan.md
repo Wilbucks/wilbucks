@@ -27,7 +27,7 @@ Use natural British English, specific questions and straightforward descriptions
 | Our directors | `/directors` | Two short biographies, each linking to an individual profile. |
 | Marie Wilcox | `/marie-wilcox` | Detailed director profile, supplied career themes, credentials, speaking interests and accurately attributed personal media. |
 | Simon Wilcox | `/simon-wilcox` | Concise director profile using confirmed facts only, with his exact LinkedIn link. |
-| Insights & Media | `/press-coverage` | Verified podcast featuring Marie and links to her selected coverage; future material only when real and approved. |
+| Insights & Media | `/press-coverage` | Curated older and recent articles, broadcast contributions, press commentary and the supplied podcast, grouped by format with verified attribution and original sources. |
 | Contact | `/contact` | Company-level enquiries via Marie’s supplied email; separately labelled director LinkedIn links. |
 
 **Navigation:** Home, About, Expertise, Our directors, Insights & Media, Contact. Director profiles are reached from Our directors, the Home introductions and related links, rather than adding two more top-level items. Use a compact menu where the longer navigation does not fit.
@@ -144,7 +144,7 @@ My career includes Binalyze, Panaseer, McLaren Applied, Digital Barriers, Siemen
 
 Retain the supplied biography themes, six expertise themes, professional interests and speaking topics, rewritten in a personal rather than company voice. Keep FCIM and describe previous professional leadership and board roles with CIM and CIISec without implying a current appointment. Do not add titles, dates, metrics or achievements to the career names.
 
-Retain the selected ASOS commentary with Binalyze attribution and AFP syndication labels. Keep the distinction between personal quotations and company coverage. Link back to Our directors and to Insights & Media.
+Retain a small selection of verified personal media with links to the full curated Insights & Media page. Preserve `/marie-wilcox#media`. Keep Binalyze attribution and AFP syndication labels where applicable, distinguishing personal quotations from company coverage. Link back to Our directors.
 
 **Actions:** Email Marie · Marie on LinkedIn
 
@@ -169,6 +169,17 @@ Sources: [exact LinkedIn profile](https://www.linkedin.com/in/simon-wilcox/) and
 
 Selected contributions from the directors, with each item attributed to the person involved.
 
+**Curated selection and presentation**
+
+Replace the single-incident emphasis with an editorial selection spanning older and recent work when sources support it. Group by format rather than presenting an undifferentiated logo wall:
+
+1. **Articles by Marie:** Only items carrying a verified Marie Wilcox or correctly identified Marie Clutterbuck byline. Guest commentary is not automatically authorship.
+2. **Broadcast and conversations:** Verified interviews, broadcast appearances and the supplied podcast. A BBC outlet name alone does not establish a Newsnight appearance.
+3. **Press commentary:** Articles containing a confirmed named quote, interview or substantive mention. Label the relationship accurately.
+4. **Company and story coverage:** Include only contextually useful items, explicitly separate from Marie’s contributions. Do not turn a company mention into a personal appearance.
+
+For each approved entry show the exact source title, outlet, date only where supplied or verified, format, short factual context, attribution and a link to the original source. Identify syndicated reports; avoid filling the selection with several versions of the same agency story. Give older pieces genuine prominence, not an invented historical timeline. No empty categories or review placeholders on the eventual public page.
+
 **Marie Wilcox on Enterprise Thought Leadership**  
 Episode 86: *From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox*.
 
@@ -181,7 +192,7 @@ https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH
 Marie’s profile includes selected October 2026 reporting on the ASOS incident, quoting her with Binalyze attribution. AFP syndicated articles are identified as such.  
 **Action:** Read Marie’s selected coverage
 
-Keep article-level workbook links on Marie’s profile rather than duplicating the full media grid. Do not imply these are Wilbucks client projects, company endorsements or interviews with both directors. No filler insights, invented articles or unverified future material.
+Place the full curated selection and original source links on Insights & Media, with a small related selection on Marie’s profile. Keep useful existing article links accessible. Do not imply these are Wilbucks client projects, company endorsements or interviews with both directors. No filler insights, invented articles or unverified future material.
 
 ### Contact
 
@@ -213,6 +224,7 @@ Label both links as personal profiles. Do not imply either is a Wilbucks company
 ## 5. Technical details and delivery after approval
 
 1. Record the corrected positioning and voice requirements as superseding earlier conflicting requirements; update architecture and launch notes to the approved page structure.
+   - Add the broader older-media and published-article review to the project task list when implementation is approved. During plan-only review, changes are limited to this plan.
 2. Keep TanStack Start, the shared Wilbucks shell, semantic design tokens and existing Button variants. Extend shared typed content with separate company and director records. No database, LinkedIn runtime integration or paid service is required.
 3. Build the additional pages and revised copy in the preview. Keep all useful existing anchors and media links working. Use only approved Simon wording; source limitations do not block a minimal profile.
 4. Add grounded metadata and structured data. Update launch templates for all approved URLs without deploying them.
