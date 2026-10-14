@@ -3,12 +3,17 @@ export const linkedin = "https://uk.linkedin.com/in/marieclutterbuck";
 export const podcast = "https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH";
 export const organisations = ["Binalyze", "Panaseer", "McLaren Applied", "Digital Barriers", "Siemens", "BAE Systems"];
 export const focusAreas = [
-  { title: "Go-to-market strategy", question: "Where is the next market opportunity?", copy: "Connect market understanding, commercial ambition and the work of reaching the right buyers." },
-  { title: "Product marketing & positioning", question: "Why should your market care?", copy: "Translate technical capability into a clear proposition, a relevant narrative and a reason to choose." },
-  { title: "Demand generation", question: "How does interest become opportunity?", copy: "Bring positioning, demand and sales conversations together around meaningful commercial goals." },
-  { title: "Cybersecurity & enterprise technology", question: "How do you make complexity clear?", copy: "Communicate complex technology through its implications for businesses, customers and trust." },
-  { title: "AI-enabled marketing", question: "Where can AI make work better?", copy: "Explore practical AI-enabled workflows with strategy, brand credibility and human judgement at the centre." },
-  { title: "Leadership & alignment", question: "Are sales and marketing moving together?", copy: "Connect marketing priorities with leadership decisions and the wider commercial direction." },
+  { title: "Commercial strategy and market entry", question: "Where is the strongest commercial opportunity?", copy: "Examine target accounts, buying requirements and routes to market before committing sales and marketing effort. Define what entering a market would require, rather than treating interest as evidence of demand." },
+  { title: "Sales strategy and business development", question: "How are opportunities developed and pursued?", copy: "Review account priorities, buyer conversations and the decisions that move a sale forward. Consider how client relationships support further business." },
+  { title: "Positioning and propositions", question: "Can a buyer explain why they would choose your product?", copy: "Establish the relevant use case, the alternatives and the evidence behind the proposition. Use that in sales material and marketing messages." },
+  { title: "Product marketing and go-to-market", question: "What does sales need to take the product to market?", copy: "Work through audiences, use cases and launch priorities. Make product information usable in a buying conversation, not just accurate as a technical description." },
+  { title: "Demand generation and pipeline", question: "Where does marketing interest stop becoming a sales opportunity?", copy: "Examine targeting, channels, qualification and follow-up. Agree what counts as a useful opportunity and how sales and marketing assess it." },
+  { title: "AI-enabled marketing", question: "Which tasks are worth changing?", copy: "Assess uses such as research, content preparation and workflow automation against information quality, time spent and review requirements. Do not adopt a tool simply because it uses AI." },
+];
+export const homeFocus = [
+  { title: "Propositions and positioning", copy: "What are buyers being asked to buy, and why should they choose it over the alternatives?" },
+  { title: "Sales strategy and routes to market", copy: "Which customers deserve attention? How will you reach them and develop the relationship?" },
+  { title: "Demand generation", copy: "Is marketing reaching potential buyers and producing opportunities that sales can pursue?" },
 ];
 export const media = [
   { outlet: "The Guardian", title: "ASOS investigating after customers receive hacking notification", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035", date: "6 October 2026", syndicated: false },
@@ -20,7 +25,7 @@ export const media = [
 ];
 export const person = {
   "@type": "Person", "@id": "/marie-wilcox#person", name: "Marie Wilcox", jobTitle: "Director", worksFor: { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks" },
-  description: "Technology marketing and go-to-market executive, cybersecurity commentator and AI-enabled growth practitioner with 20+ years’ experience.",
+  description: "Senior technology marketing leader with more than 20 years’ experience in positioning, product marketing, go-to-market strategy and demand generation.",
   email: "marieawilcox@outlook.com", sameAs: [linkedin],
   knowsAbout: ["Go-to-market strategy", "Product marketing", "Category creation", "Demand generation", "Analyst relations", "Cybersecurity", "AI-enabled marketing"],
   hasCredential: { "@type": "EducationalOccupationalCredential", name: "Fellow of the Chartered Institute of Marketing (FCIM)" },
@@ -29,8 +34,8 @@ export const simonLinkedin = "https://www.linkedin.com/in/simon-wilcox/";
 export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", description: "Independent sales and marketing consultancy for technology businesses." };
 export const simonPerson = { "@type": "Person", "@id": "/simon-wilcox#person", name: "Simon Wilcox", sameAs: [simonLinkedin], worksFor: company, jobTitle: "Director" };
 export const directorIntroductions = [
-  { name: "Marie Wilcox", path: "/marie-wilcox" as const, copy: "Senior technology marketing leader with experience across cybersecurity, enterprise technology, go-to-market strategy, product marketing and demand generation." },
-  { name: "Simon Wilcox", path: "/simon-wilcox" as const, copy: "A technology and cybersecurity perspective, with a professional focus on data intelligence in security and government." },
+  { name: "Marie Wilcox", path: "/marie-wilcox" as const, copy: "Senior technology marketing leader. Her experience covers positioning, product marketing, go-to-market strategy and demand generation, including the practical use of AI in marketing." },
+  { name: "Simon Wilcox", path: "/simon-wilcox" as const, copy: "Sales and commercial leader with a technology and security background. His focus covers business development, sales strategy, market entry and client relationships." },
 ];
 export type Publication = { title: string; outlet: string; date: string; url: string; category: "authored" | "quoted"; attribution: string; context: string };
 export const publications: Publication[] = [
@@ -43,9 +48,17 @@ export const publications: Publication[] = [
  { title: "Soft Market, Hard Choices: The State of Cyber Insurance", outlet: "Infosecurity Magazine", date: "31 December 2025", url: "https://www.infosecurity-magazine.com/news-features/the-state-of-cyber-insurance-2025/", category: "quoted", attribution: "By Stephen Pritchard; quotes Marie Wilcox as VP at Binalyze and CIISec board director at publication", context: "Cyber insurance and enterprise risk management." },
 ];
 export const principles = [
- ["Clarity before activity", "Know what needs to change before deciding what to do."],
- ["The buyer’s problem matters", "Explain value in terms customers recognise, not only technical features."],
- ["Sales and marketing belong together", "Connect the proposition, outreach and sales conversation."],
- ["Technology needs judgement", "Consider AI where it serves the task, with human responsibility for decisions and communication."],
- ["Claims need evidence", "Separate ambition from demonstrated results."],
+ ["Use buyer feedback.", "Test assumptions against sales conversations and available evidence."],
+ ["Make decisions before adding activity.", "More content or outreach is not always the answer."],
+ ["Keep claims defensible.", "Explain what the product can do without stretching the evidence."],
+ ["Use tools for a reason.", "AI is useful where it improves a defined task. Outputs still need checking."],
 ];
+
+// Preserve the other collected links as research records, not public catalogue entries.
+export const recentPublications: Publication[] = [
+ // This linked update has no heading; retain a descriptive label rather than inventing a publisher title.
+ { title: "ASOS investigating after customers receive hacking notification", outlet: "The Guardian", date: "6 October 2026", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035", category: "quoted", attribution: "Quotes Marie Wilcox as vice president of market strategy at Binalyze at publication.", context: "Commentary on the ASOS incident in a written live-blog update." },
+ ...["Cisco Investments", "Infosecurity Magazine"].flatMap(outlet => publications.filter(item => item.outlet === outlet && item.date.includes("2025"))),
+];
+export const earlierPublications = ["9 April 2024", "30 August 2023", "10 June 2019", "1 August 2018"].flatMap(date => publications.filter(item => item.date === date));
+export const profilePublications = ["Cisco Investments", "Solutions Review"].flatMap(outlet => publications.filter(item => item.outlet === outlet));

@@ -1,7 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { publications, directorIntroductions, person, simonPerson } from "@/lib/wilbucks-content";
+import { publications, directorIntroductions, person, simonPerson, recentPublications, earlierPublications } from "@/lib/wilbucks-content";
 
 describe("Supplied media attribution", () => {
+  it("curates eight contributions including the separate podcast", () => {
+    expect(recentPublications.length + earlierPublications.length + 1).toBe(8);
+    expect(recentPublications.filter(item => item.date.includes("2026"))).toHaveLength(1);
+    expect(earlierPublications.map(item => item.date)).toEqual(["9 April 2024", "30 August 2023", "10 June 2019", "1 August 2018"]);
+  });
   it("keeps Solutions Review as Marie’s authored article from 30 August 2023", () => {
     const item = publications.find(item => item.outlet === "Solutions Review");
     expect(item?.category).toBe("authored");
