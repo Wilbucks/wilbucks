@@ -3,7 +3,7 @@ export function pageHead(title: string, description: string, path: string, schem
     meta: [
       { title }, { name: "description", content: description },
       { property: "og:title", content: title }, { property: "og:description", content: description },
-      { property: "og:type", content: path === "/marie-wilcox" ? "profile" : "website" },
+      { property: "og:type", content: path === "/marie-wilcox" || path === "/simon-wilcox" ? "profile" : "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "noindex, follow" },
     ],
