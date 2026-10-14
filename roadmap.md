@@ -15,3 +15,10 @@
 - [x] Add selected verified media, grounded content and working enquiry links.
 - [x] Add page metadata, structured data and launch-only sitemap/redirect notes.
 - [x] Verify desktop/tablet/mobile navigation, images, accessibility and tests.
+
+# Approved company-first revision
+- [ ] Reframe company copy and add About, Directors, Simon and Insights & Media pages.
+- [ ] Include older and recent authored/quoted media with historical attribution, including the three supplied sources.
+- [ ] Update metadata, shared navigation, director entities and launch-only notes.
+- [ ] Verify page journeys, contact links, mobile layouts and tests without publishing.
+- [ ] Await sources for BBC Newsnight, Mirror and inaccessible Featured items; await Simon's expanded biography confirmation.
