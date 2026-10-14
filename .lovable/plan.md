@@ -194,6 +194,15 @@ Marie’s profile includes selected October 2026 reporting on the ASOS incident,
 
 Place the full curated selection and original source links on Insights & Media, with a small related selection on Marie’s profile. Keep useful existing article links accessible. Do not imply these are Wilbucks client projects, company endorsements or interviews with both directors. No filler insights, invented articles or unverified future material.
 
+**Source audit and review placeholders, not website copy**
+
+- The public LinkedIn check could not inspect the actual Featured cards, their ordering, card titles or outbound links. Indexed articles can be verified separately but must not be described as confirmed Featured selections. Source: https://uk.linkedin.com/in/marieclutterbuck.
+- The available `Binalyze_ASOS_Coverage_Master_9Oct2026.xlsx` contains reporting dated 6 to 8 October 2026, not the broader historical master described in the brief. It has no BBC Newsnight, Mirror or authored-article entries. No additional historical media workbook was located among the current uploads or project materials.
+- **Older broadcast appearance: source needed.** BBC Newsnight is a review lead, not a verified Marie appearance. A company demonstration or company coverage does not establish that she appeared on air. Supply the recording, programme link, transcript or Featured card screenshot with its destination.
+- **Mirror coverage: source needed.** Supply the original article or corresponding historical workbook row; do not invent a title or personal quotation.
+- **Featured-only material: source needed.** Supply the Featured screenshots and original links, or the broader historical master, to review pieces hidden behind LinkedIn access restrictions. Keep these placeholders in the review only.
+- Older indexed articles are being checked against their original source pages for title, date and byline before selection. Do not add employers, titles, awards or CV chronology from article bios to the director profile without separate confirmation.
+
 ### Contact
 
 **Contact Wilbucks**  
@@ -236,4 +245,5 @@ Label both links as personal profiles. Do not imply either is a Wilbucks company
 - Approve the company proposition, draft copy and eight-page structure.
 - Confirm Simon’s expanded biography, particularly the Detica/BAE Systems tenure and business-facing consulting description. Use the concise, source-supported version above unless more detail is confirmed.
 - A genuine Simon photograph is optional, not a blocker.
+- Supply accessible links or screenshots for older Featured material, especially BBC Newsnight and Mirror, or upload the broader historical media master. Unverified slots remain review-only placeholders, not live claims.
 - Existing legal details, business email, form/newsletter usage and final hosting still require confirmation before any separately authorised launch.
