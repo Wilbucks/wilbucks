@@ -19,9 +19,33 @@ export const media = [
   { outlet: "Barron’s", title: "ASOS says probing ‘unauthorised activity’ after phone alerts", url: "https://www.barrons.com/news/asos-says-probing-unauthorised-activity-after-phone-alerts-c17c53a5?eafs_enabled=false", date: "6 October 2026", syndicated: true },
 ];
 export const person = {
-  "@type": "Person", name: "Marie Wilcox",
+  "@type": "Person", "@id": "/marie-wilcox#person", name: "Marie Wilcox", jobTitle: "Director", worksFor: { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks" },
   description: "Technology marketing and go-to-market executive, cybersecurity commentator and AI-enabled growth practitioner with 20+ years’ experience.",
   email: "marieawilcox@outlook.com", sameAs: [linkedin],
   knowsAbout: ["Go-to-market strategy", "Product marketing", "Category creation", "Demand generation", "Analyst relations", "Cybersecurity", "AI-enabled marketing"],
   hasCredential: { "@type": "EducationalOccupationalCredential", name: "Fellow of the Chartered Institute of Marketing (FCIM)" },
 };
+export const simonLinkedin = "https://www.linkedin.com/in/simon-wilcox/";
+export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", description: "Independent sales and marketing consultancy for technology businesses." };
+export const simonPerson = { "@type": "Person", "@id": "/simon-wilcox#person", name: "Simon Wilcox", sameAs: [simonLinkedin], worksFor: company, jobTitle: "Director" };
+export const directorIntroductions = [
+  { name: "Marie Wilcox", path: "/marie-wilcox" as const, copy: "Senior technology marketing leader with experience across cybersecurity, enterprise technology, go-to-market strategy, product marketing and demand generation." },
+  { name: "Simon Wilcox", path: "/simon-wilcox" as const, copy: "A technology and cybersecurity perspective, with a professional focus on data intelligence in security and government." },
+];
+export type Publication = { title: string; outlet: string; date: string; url: string; category: "authored" | "quoted"; attribution: string; context: string };
+export const publications: Publication[] = [
+ { title: "From Zero Day Attack to Zero Day Recovery", outlet: "Infosecurity Magazine", date: "1 August 2018", url: "https://www.infosecurity-magazine.com/opinions/zero-day-attack-recovery/", category: "authored", attribution: "By Marie Clutterbuck, then Chief Marketing Officer at Tectrade", context: "Recovering data after destructive cyber attacks." },
+ { title: "No excuse for derailing station IT", outlet: "Rail Technology Magazine", date: "10 June 2019", url: "https://www.railtechnologymagazine.com/Comment/no-excuse-for-derailing-station-it", category: "authored", attribution: "By Marie Clutterbuck, then CMO at Tectrade", context: "Railway station IT vulnerabilities and recovery." },
+ { title: "Stay one step ahead", outlet: "Intersec", date: "June 2019", url: "https://www.intersecmag.co.uk/stay-one-step-ahead/", category: "authored", attribution: "By Marie Clutterbuck", context: "Businesses as targets for cyber crime." },
+ { title: "Restoring Cybersecurity Confidence Amidst a Resource Crisis", outlet: "Solutions Review", date: "30 August 2023", url: "https://solutionsreview.com/security-information-event-management/restoring-cybersecurity-confidence-amidst-a-resource-crisis/", category: "authored", attribution: "By Marie Wilcox, then Security Evangelist at Panaseer", context: "Cybersecurity resources and confidence." },
+ { title: "UK plc failing on multiple cyber measures", outlet: "Computer Weekly", date: "9 April 2024", url: "https://www.computerweekly.com/news/366580174/UK-plc-failing-on-multiple-cyber-measures", category: "quoted", attribution: "By Alex Scroxton; quotes Marie Wilcox as Security Evangelist at Panaseer", context: "UK organisations’ cyber controls and security visibility." },
+ { title: "From Alerts to Answers: Unlocking XDR’s Full Potential with Forensic Visibility", outlet: "Cisco Investments", date: "9 September 2025", url: "https://www.ciscoinvestments.com/posts/from-alerts-to-answers-unlocking-xdrs-full-potential-with-forensic-visibility", category: "authored", attribution: "By Marie Wilcox, identified with Binalyze at publication", context: "Forensic visibility and security investigations." },
+ { title: "Soft Market, Hard Choices: The State of Cyber Insurance", outlet: "Infosecurity Magazine", date: "31 December 2025", url: "https://www.infosecurity-magazine.com/news-features/the-state-of-cyber-insurance-2025/", category: "quoted", attribution: "By Stephen Pritchard; quotes Marie Wilcox as VP at Binalyze and CIISec board director at publication", context: "Cyber insurance and enterprise risk management." },
+];
+export const principles = [
+ ["Clarity before activity", "Know what needs to change before deciding what to do."],
+ ["The buyer’s problem matters", "Explain value in terms customers recognise, not only technical features."],
+ ["Sales and marketing belong together", "Connect the proposition, outreach and sales conversation."],
+ ["Technology needs judgement", "Consider AI where it serves the task, with human responsibility for decisions and communication."],
+ ["Claims need evidence", "Separate ambition from demonstrated results."],
+];
