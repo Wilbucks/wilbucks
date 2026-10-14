@@ -167,7 +167,7 @@ Sources: [exact LinkedIn profile](https://www.linkedin.com/in/simon-wilcox/) and
 **Insights & Media**  
 *Conversations on technology, cybersecurity and marketing.*
 
-Selected contributions from the directors, with each item attributed to the person involved.
+Articles and conversations from Marie Wilcox on cybersecurity, technology and marketing, alongside selected press commentary. Older articles published under Marie Clutterbuck are labelled with the original byline. Each contribution is attributed to its author or participant, not presented as Wilbucks client work.
 
 **Curated selection and presentation**
 
@@ -189,8 +189,24 @@ https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH
 
 **Selected cybersecurity commentary**
 
-Marie’s profile includes selected October 2026 reporting on the ASOS incident, quoting her with Binalyze attribution. AFP syndicated articles are identified as such.  
-**Action:** Read Marie’s selected coverage
+Selected reporting on the October 2026 ASOS incident includes Marie’s cybersecurity commentary with Binalyze attribution. Syndicated reporting is labelled separately from original interviews.
+
+**Proposed curated entries for review**
+
+| Group | Exact source title and link | Date to display | Attribution and draft context |
+| --- | --- | --- | --- |
+| Articles by Marie | [From Zero Day Attack to Zero Day Recovery](https://www.infosecurity-magazine.com/opinions/zero-day-attack-recovery/) · Infosecurity Magazine | 1 August 2018 | Published under Marie Clutterbuck. Opinion on recovering data after destructive cyber attacks. Direct source names her as the writer. |
+| Articles by Marie | [No excuse for derailing station IT](https://www.railtechnologymagazine.com/Comment/no-excuse-for-derailing-station-it) · Rail Technology Magazine | 10 June 2019 | Published under Marie Clutterbuck. Commentary on railway station IT vulnerabilities and recovery. The webpage date differs from the cited April/May print issue; use the webpage date. |
+| Articles by Marie | [Stay one step ahead](https://www.intersecmag.co.uk/stay-one-step-ahead/) · Intersec | June 2019 | Published under Marie Clutterbuck. Feature on businesses as targets for cyber crime. Title and named author are visible in the limited source preview; do not imply full-article access or invent a day of publication. |
+| Articles by Marie | [From Alerts to Answers: Unlocking XDR’s Full Potential with Forensic Visibility](https://www.ciscoinvestments.com/posts/from-alerts-to-answers-unlocking-xdrs-full-potential-with-forensic-visibility) · Cisco Investments | 9 September 2025 | Guest article explicitly authored by Marie Wilcox with Binalyze attribution. Discusses forensic visibility and security investigations. Use the publisher’s title and date, not the differently worded LinkedIn share. |
+| Broadcast and conversations | [From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox](https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH) · Enterprise Thought Leadership, episode 86 | Omit date | Verified podcast guest. AI-enabled marketing workflows and go-to-market teams. Retain the supplied Spotify destination without inferring employment, performance statistics or a publication year. |
+| Press commentary | [ASOS investigating after customers receive hacking notification](https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035) · The Guardian | 6 October 2026 | Existing workbook-linked live-blog item with Marie’s named Binalyze commentary. Display label from the existing record, not a claim that this is the overall live-blog headline. |
+| Press commentary | [Threatening message to ASOS customers was ‘psychological warfare’](https://news.sky.com/story/asos-latest-customers-told-retailer-has-been-hacked-13591381?postid=12585094) · Sky News | 6 October 2026 | Existing workbook-linked update with Marie’s named Binalyze commentary. Label as written news commentary, not a broadcast appearance. Display label refers to the linked update. |
+| Syndicated press commentary | [ASOS probes ‘unauthorised activity’ after phone alerts](https://www.france24.com/en/live-news/20261006-asos-says-probing-unauthorised-activity-after-phone-alerts) · France 24 / AFP | 6 October 2026 | One representative AFP report carrying Marie’s Binalyze commentary. Syndicated reporting, not a separate France 24 interview. Use the workbook item label; confirm final publisher heading before implementation. |
+
+Keep the existing Daily Mail, Barron’s and Straits Times source links available in the related ASOS coverage list, rather than giving three versions of the same story equal prominence. Their inclusion does not establish authorship or a separate interview. No company-only item is currently promoted as a personal contribution.
+
+**Additional older quote candidate, not yet final copy:** [Facial recognition technology to enhance travel and banking in 2018](https://www.sourcesecurity.com/insights/facial-recognition-biometrics-utilised-large-scale-finance-travel-co-7121-ga.24162.html), SourceSecurity. Indexed excerpts contain an explicit Marie Clutterbuck quotation associated with Digital Barriers. The publication date and full source context remain unconfirmed; do not infer a date from “2018” in the title or classify it as an authored article. Review before adding it to the curated selection.
 
 Place the full curated selection and original source links on Insights & Media, with a small related selection on Marie’s profile. Keep useful existing article links accessible. Do not imply these are Wilbucks client projects, company endorsements or interviews with both directors. No filler insights, invented articles or unverified future material.
 
@@ -201,7 +217,7 @@ Place the full curated selection and original source links on Insights & Media, 
 - **Older broadcast appearance: source needed.** BBC Newsnight is a review lead, not a verified Marie appearance. A company demonstration or company coverage does not establish that she appeared on air. Supply the recording, programme link, transcript or Featured card screenshot with its destination.
 - **Mirror coverage: source needed.** Supply the original article or corresponding historical workbook row; do not invent a title or personal quotation.
 - **Featured-only material: source needed.** Supply the Featured screenshots and original links, or the broader historical master, to review pieces hidden behind LinkedIn access restrictions. Keep these placeholders in the review only.
-- Older indexed articles are being checked against their original source pages for title, date and byline before selection. Do not add employers, titles, awards or CV chronology from article bios to the director profile without separate confirmation.
+- Infosecurity Magazine and Rail Technology Magazine were checked against direct source pages; Intersec against its limited source preview; Cisco Investments against the publisher page and indexed excerpts. These checks support the bylined selection above independently of Featured access. Do not add employers, titles, awards or CV chronology from article bios to the director profile without separate confirmation.
 
 ### Contact
 
