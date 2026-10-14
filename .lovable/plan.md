@@ -27,7 +27,7 @@ Use natural British English, specific questions and straightforward descriptions
 | Our directors | `/directors` | Two short biographies, each linking to an individual profile. |
 | Marie Wilcox | `/marie-wilcox` | Detailed director profile, supplied career themes, credentials, speaking interests and accurately attributed personal media. |
 | Simon Wilcox | `/simon-wilcox` | Concise director profile using confirmed facts only, with his exact LinkedIn link. |
-| Insights & Media | `/press-coverage` | Verified podcast featuring Marie and links to her selected coverage; future material only when real and approved. |
+| Insights & Media | `/press-coverage` | Curated older and recent articles, broadcast contributions, press commentary and the supplied podcast, grouped by format with verified attribution and original sources. |
 | Contact | `/contact` | Company-level enquiries via Marie’s supplied email; separately labelled director LinkedIn links. |
 
 **Navigation:** Home, About, Expertise, Our directors, Insights & Media, Contact. Director profiles are reached from Our directors, the Home introductions and related links, rather than adding two more top-level items. Use a compact menu where the longer navigation does not fit.
@@ -144,7 +144,7 @@ My career includes Binalyze, Panaseer, McLaren Applied, Digital Barriers, Siemen
 
 Retain the supplied biography themes, six expertise themes, professional interests and speaking topics, rewritten in a personal rather than company voice. Keep FCIM and describe previous professional leadership and board roles with CIM and CIISec without implying a current appointment. Do not add titles, dates, metrics or achievements to the career names.
 
-Retain the selected ASOS commentary with Binalyze attribution and AFP syndication labels. Keep the distinction between personal quotations and company coverage. Link back to Our directors and to Insights & Media.
+Retain a small selection of verified personal media with links to the full curated Insights & Media page. Preserve `/marie-wilcox#media`. Keep Binalyze attribution and AFP syndication labels where applicable, distinguishing personal quotations from company coverage. Link back to Our directors.
 
 **Actions:** Email Marie · Marie on LinkedIn
 
@@ -167,7 +167,18 @@ Sources: [exact LinkedIn profile](https://www.linkedin.com/in/simon-wilcox/) and
 **Insights & Media**  
 *Conversations on technology, cybersecurity and marketing.*
 
-Selected contributions from the directors, with each item attributed to the person involved.
+Articles and conversations from Marie Wilcox on cybersecurity, technology and marketing, alongside selected press commentary. Older articles published under Marie Clutterbuck are labelled with the original byline. Each contribution is attributed to its author or participant, not presented as Wilbucks client work.
+
+**Curated selection and presentation**
+
+Replace the single-incident emphasis with an editorial selection spanning older and recent work when sources support it. Group by format rather than presenting an undifferentiated logo wall:
+
+1. **Articles by Marie:** Only items carrying a verified Marie Wilcox or correctly identified Marie Clutterbuck byline. Guest commentary is not automatically authorship.
+2. **Broadcast and conversations:** Verified interviews, broadcast appearances and the supplied podcast. A BBC outlet name alone does not establish a Newsnight appearance.
+3. **Press commentary:** Articles containing a confirmed named quote, interview or substantive mention. Label the relationship accurately.
+4. **Company and story coverage:** Include only contextually useful items, explicitly separate from Marie’s contributions. Do not turn a company mention into a personal appearance.
+
+For each approved entry show the exact source title, outlet, date only where supplied or verified, format, short factual context, attribution and a link to the original source. Identify syndicated reports; avoid filling the selection with several versions of the same agency story. Give older pieces genuine prominence, not an invented historical timeline. No empty categories or review placeholders on the eventual public page.
 
 **Marie Wilcox on Enterprise Thought Leadership**  
 Episode 86: *From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox*.
@@ -178,10 +189,35 @@ https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH
 
 **Selected cybersecurity commentary**
 
-Marie’s profile includes selected October 2026 reporting on the ASOS incident, quoting her with Binalyze attribution. AFP syndicated articles are identified as such.  
-**Action:** Read Marie’s selected coverage
+Selected reporting on the October 2026 ASOS incident includes Marie’s cybersecurity commentary with Binalyze attribution. Syndicated reporting is labelled separately from original interviews.
 
-Keep article-level workbook links on Marie’s profile rather than duplicating the full media grid. Do not imply these are Wilbucks client projects, company endorsements or interviews with both directors. No filler insights, invented articles or unverified future material.
+**Proposed curated entries for review**
+
+| Group | Exact source title and link | Date to display | Attribution and draft context |
+| --- | --- | --- | --- |
+| Articles by Marie | [From Zero Day Attack to Zero Day Recovery](https://www.infosecurity-magazine.com/opinions/zero-day-attack-recovery/) · Infosecurity Magazine | 1 August 2018 | Published under Marie Clutterbuck. Opinion on recovering data after destructive cyber attacks. Direct source names her as the writer. |
+| Articles by Marie | [No excuse for derailing station IT](https://www.railtechnologymagazine.com/Comment/no-excuse-for-derailing-station-it) · Rail Technology Magazine | 10 June 2019 | Published under Marie Clutterbuck. Commentary on railway station IT vulnerabilities and recovery. The webpage date differs from the cited April/May print issue; use the webpage date. |
+| Articles by Marie | [Stay one step ahead](https://www.intersecmag.co.uk/stay-one-step-ahead/) · Intersec | June 2019 | Published under Marie Clutterbuck. Feature on businesses as targets for cyber crime. Title and named author are visible in the limited source preview; do not imply full-article access or invent a day of publication. |
+| Articles by Marie | [From Alerts to Answers: Unlocking XDR’s Full Potential with Forensic Visibility](https://www.ciscoinvestments.com/posts/from-alerts-to-answers-unlocking-xdrs-full-potential-with-forensic-visibility) · Cisco Investments | 9 September 2025 | Guest article explicitly authored by Marie Wilcox with Binalyze attribution. Discusses forensic visibility and security investigations. Use the publisher’s title and date, not the differently worded LinkedIn share. |
+| Broadcast and conversations | [From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox](https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH) · Enterprise Thought Leadership, episode 86 | Omit date | Verified podcast guest. AI-enabled marketing workflows and go-to-market teams. Retain the supplied Spotify destination without inferring employment, performance statistics or a publication year. |
+| Press commentary | [ASOS investigating after customers receive hacking notification](https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035) · The Guardian | 6 October 2026 | Existing workbook-linked live-blog item with Marie’s named Binalyze commentary. Display label from the existing record, not a claim that this is the overall live-blog headline. |
+| Press commentary | [Threatening message to ASOS customers was ‘psychological warfare’](https://news.sky.com/story/asos-latest-customers-told-retailer-has-been-hacked-13591381?postid=12585094) · Sky News | 6 October 2026 | Existing workbook-linked update with Marie’s named Binalyze commentary. Label as written news commentary, not a broadcast appearance. Display label refers to the linked update. |
+| Syndicated press commentary | [ASOS probes ‘unauthorised activity’ after phone alerts](https://www.france24.com/en/live-news/20261006-asos-says-probing-unauthorised-activity-after-phone-alerts) · France 24 / AFP | 6 October 2026 | One representative AFP report carrying Marie’s Binalyze commentary. Syndicated reporting, not a separate France 24 interview. Use the workbook item label; confirm final publisher heading before implementation. |
+
+Keep the existing Daily Mail, Barron’s and Straits Times source links available in the related ASOS coverage list, rather than giving three versions of the same story equal prominence. Their inclusion does not establish authorship or a separate interview. No company-only item is currently promoted as a personal contribution.
+
+**Additional older quote candidate, not yet final copy:** [Facial recognition technology to enhance travel and banking in 2018](https://www.sourcesecurity.com/insights/facial-recognition-biometrics-utilised-large-scale-finance-travel-co-7121-ga.24162.html), SourceSecurity. Indexed excerpts contain an explicit Marie Clutterbuck quotation associated with Digital Barriers. The publication date and full source context remain unconfirmed; do not infer a date from “2018” in the title or classify it as an authored article. Review before adding it to the curated selection.
+
+Place the full curated selection and original source links on Insights & Media, with a small related selection on Marie’s profile. Keep useful existing article links accessible. Do not imply these are Wilbucks client projects, company endorsements or interviews with both directors. No filler insights, invented articles or unverified future material.
+
+**Source audit and review placeholders, not website copy**
+
+- The public LinkedIn check could not inspect the actual Featured cards, their ordering, card titles or outbound links. Indexed articles can be verified separately but must not be described as confirmed Featured selections. Source: https://uk.linkedin.com/in/marieclutterbuck.
+- The available `Binalyze_ASOS_Coverage_Master_9Oct2026.xlsx` contains reporting dated 6 to 8 October 2026, not the broader historical master described in the brief. It has no BBC Newsnight, Mirror or authored-article entries. No additional historical media workbook was located among the current uploads or project materials.
+- **Older broadcast appearance: source needed.** BBC Newsnight is a review lead, not a verified Marie appearance. A company demonstration or company coverage does not establish that she appeared on air. Supply the recording, programme link, transcript or Featured card screenshot with its destination.
+- **Mirror coverage: source needed.** Supply the original article or corresponding historical workbook row; do not invent a title or personal quotation.
+- **Featured-only material: source needed.** Supply the Featured screenshots and original links, or the broader historical master, to review pieces hidden behind LinkedIn access restrictions. Keep these placeholders in the review only.
+- Infosecurity Magazine and Rail Technology Magazine were checked against direct source pages; Intersec against its limited source preview; Cisco Investments against the publisher page and indexed excerpts. These checks support the bylined selection above independently of Featured access. Do not add employers, titles, awards or CV chronology from article bios to the director profile without separate confirmation.
 
 ### Contact
 
@@ -213,6 +249,7 @@ Label both links as personal profiles. Do not imply either is a Wilbucks company
 ## 5. Technical details and delivery after approval
 
 1. Record the corrected positioning and voice requirements as superseding earlier conflicting requirements; update architecture and launch notes to the approved page structure.
+   - Add the broader older-media and published-article review to the project task list when implementation is approved. During plan-only review, changes are limited to this plan.
 2. Keep TanStack Start, the shared Wilbucks shell, semantic design tokens and existing Button variants. Extend shared typed content with separate company and director records. No database, LinkedIn runtime integration or paid service is required.
 3. Build the additional pages and revised copy in the preview. Keep all useful existing anchors and media links working. Use only approved Simon wording; source limitations do not block a minimal profile.
 4. Add grounded metadata and structured data. Update launch templates for all approved URLs without deploying them.
@@ -224,4 +261,5 @@ Label both links as personal profiles. Do not imply either is a Wilbucks company
 - Approve the company proposition, draft copy and eight-page structure.
 - Confirm Simon’s expanded biography, particularly the Detica/BAE Systems tenure and business-facing consulting description. Use the concise, source-supported version above unless more detail is confirmed.
 - A genuine Simon photograph is optional, not a blocker.
+- Supply accessible links or screenshots for older Featured material, especially BBC Newsnight and Mirror, or upload the broader historical media master. Unverified slots remain review-only placeholders, not live claims.
 - Existing legal details, business email, form/newsletter usage and final hosting still require confirmation before any separately authorised launch.
