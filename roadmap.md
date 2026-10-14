@@ -22,3 +22,9 @@
 - [x] Update metadata, shared navigation, director entities and launch-only notes.
 - [x] Verify page journeys, contact links, mobile layouts and tests without publishing.
 - [ ] Await sources for BBC Newsnight, Mirror and inaccessible Featured items; await Simon's expanded biography confirmation.
+
+# Approved direct-copy revision
+- [ ] Replace generic wording across all eight pages and shared contact/footer copy.
+- [ ] Foreground Simon's sales background and Marie's technology marketing experience equally.
+- [ ] Curate eight media contributions, retaining original sources and historical attribution.
+- [ ] Verify navigation, media selection, metadata and readable layouts without publishing.
