@@ -11,7 +11,7 @@
 - [x] Reissue the revised plan for review; do not implement or publish the site yet.
 
 # Approved Wilbucks preview
-- [ ] Build four pages with the original logo, supplied portrait and expressive accessible motion.
-- [ ] Add selected verified media, grounded content and working enquiry links.
-- [ ] Add page metadata, structured data and launch-only sitemap/redirect notes.
-- [ ] Verify desktop/tablet/mobile navigation, images, accessibility and tests.
+- [x] Build four pages with the original logo, supplied portrait and expressive accessible motion.
+- [x] Add selected verified media, grounded content and working enquiry links.
+- [x] Add page metadata, structured data and launch-only sitemap/redirect notes.
+- [x] Verify desktop/tablet/mobile navigation, images, accessibility and tests.

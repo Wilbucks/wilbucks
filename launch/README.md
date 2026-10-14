@@ -7,8 +7,8 @@ This is an unpublished integration preview. No live-site, domain or DNS change i
 - Choose the final hosting/integration path and obtain explicit launch approval.
 - Keep `/` and `/marie-wilcox` unchanged. No separate press route is included. At migration, confirm a 301 redirect from `/press-coverage` to `/marie-wilcox#media`; do not activate it in the preview.
 - Remove preview `noindex` metadata only on approved launch. Set canonical URLs to the final origin and integration path.
-- Generate the production XML sitemap with `/`, `/marie-wilcox`, `/expertise` and `/contact` at that final origin. Do not expose a placeholder or live-Mailchimp sitemap in this preview.
-- Production robots.txt: allow crawling and reference the final absolute sitemap URL. Keep the preview robots.txt disallow rule separate.
+- Generate the production XML sitemap with `/`, `/marie-wilcox`, `/expertise` and `/contact` at that final origin using `python3 launch/generate-search-files.py <approved-https-origin> <output-directory>`. Do not expose a placeholder or live-Mailchimp sitemap in this preview.
+- Production robots.txt: allow crawling and reference the final absolute sitemap URL. The preview allows crawlers to read its noindex metadata and does not advertise a production sitemap.
 - Recheck media links, portrait, keyboard navigation, contact links, mobile layouts and performance on the final host.
 - Existing reCAPTCHA, newsletter popup, cookie notice, info@wilbucks.com, company registration 12657721 and VAT 352 5364 05 were observed during the audit, not verified as current. No form submissions or live changes were made.
 
