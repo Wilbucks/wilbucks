@@ -146,6 +146,20 @@ Retain the supplied biography themes, six expertise themes, professional interes
 
 Retain a small selection of verified personal media with links to the full curated Insights & Media page. Preserve `/marie-wilcox#media`. Keep Binalyze attribution and AFP syndication labels where applicable, distinguishing personal quotations from company coverage. Link back to Our directors.
 
+**Profile media draft**
+
+*Writing and commentary on cybersecurity*
+
+My published work and press contributions explore cybersecurity resources, security visibility, recovery and the business implications of cyber risk. Articles I have written are listed separately from reporting that quotes me. Roles and employers are attributed as they appeared at the time of publication.
+
+Include the three supplied original-source links as profile selections. Source access limitations are recorded below; do not describe restricted pages as fully inspected:
+
+- **Article by Marie:** [Restoring Cybersecurity Confidence Amidst a Resource Crisis](https://solutionsreview.com/security-information-event-management/restoring-cybersecurity-confidence-amidst-a-resource-crisis/) · Solutions Review · 30 August 2023. Original byline: Marie Wilcox; listed as Security Evangelist at Panaseer.
+- **Press commentary / quoted in:** [UK plc failing on multiple cyber measures](https://www.computerweekly.com/news/366580174/UK-plc-failing-on-multiple-cyber-measures) · Computer Weekly · 9 April 2024. Written by Alex Scroxton; quotes Marie in her Panaseer security evangelist role.
+- **Press commentary / quoted in:** [Soft Market, Hard Choices: The State of Cyber Insurance](https://www.infosecurity-magazine.com/news-features/the-state-of-cyber-insurance-2025/) · Infosecurity Magazine · 31 December 2025. Written by Stephen Pritchard; quotes Marie, identified in the article as VP at Binalyze and CIISec board director. This is historical article attribution, not confirmation of a current board appointment.
+
+Balance these with one older authored piece and the supplied podcast. Link to the wider collection rather than repeating the full media archive or letting the ASOS story dominate her profile.
+
 **Actions:** Email Marie · Marie on LinkedIn
 
 ### Simon Wilcox
@@ -198,13 +212,18 @@ Selected reporting on the October 2026 ASOS incident includes Marie’s cybersec
 | Articles by Marie | [From Zero Day Attack to Zero Day Recovery](https://www.infosecurity-magazine.com/opinions/zero-day-attack-recovery/) · Infosecurity Magazine | 1 August 2018 | Published under Marie Clutterbuck. Opinion on recovering data after destructive cyber attacks. Direct source names her as the writer. |
 | Articles by Marie | [No excuse for derailing station IT](https://www.railtechnologymagazine.com/Comment/no-excuse-for-derailing-station-it) · Rail Technology Magazine | 10 June 2019 | Published under Marie Clutterbuck. Commentary on railway station IT vulnerabilities and recovery. The webpage date differs from the cited April/May print issue; use the webpage date. |
 | Articles by Marie | [Stay one step ahead](https://www.intersecmag.co.uk/stay-one-step-ahead/) · Intersec | June 2019 | Published under Marie Clutterbuck. Feature on businesses as targets for cyber crime. Title and named author are visible in the limited source preview; do not imply full-article access or invent a day of publication. |
+| Articles by Marie | [Restoring Cybersecurity Confidence Amidst a Resource Crisis](https://solutionsreview.com/security-information-event-management/restoring-cybersecurity-confidence-amidst-a-resource-crisis/) · Solutions Review | 30 August 2023 | Original byline supplied: Marie Wilcox, listed as Security Evangelist at Panaseer. Authored article, not journalist-written reporting. Preserve title, date and historical attribution. Direct page returns 403; retain the supplied attribution, supported by indexed metadata and related historical records, with full source inspection still outstanding. |
 | Articles by Marie | [From Alerts to Answers: Unlocking XDR’s Full Potential with Forensic Visibility](https://www.ciscoinvestments.com/posts/from-alerts-to-answers-unlocking-xdrs-full-potential-with-forensic-visibility) · Cisco Investments | 9 September 2025 | Guest article explicitly authored by Marie Wilcox with Binalyze attribution. Discusses forensic visibility and security investigations. Use the publisher’s title and date, not the differently worded LinkedIn share. |
+| Press commentary / quoted in | [UK plc failing on multiple cyber measures](https://www.computerweekly.com/news/366580174/UK-plc-failing-on-multiple-cyber-measures) · Computer Weekly | 9 April 2024 | Journalist byline: Alex Scroxton. Quotes Marie in her Panaseer security evangelist role on cyber controls and security visibility. Not authored by Marie. Direct page returns 403; supplied details supported by indexed content and contemporaneous reporting, not full direct-page inspection. |
+| Press commentary / quoted in | [Soft Market, Hard Choices: The State of Cyber Insurance](https://www.infosecurity-magazine.com/news-features/the-state-of-cyber-insurance-2025/) · Infosecurity Magazine | 31 December 2025 | Journalist byline: Stephen Pritchard. Quotes Marie, identified at publication as VP at Binalyze and CIISec board director. Direct article accessible and title, date, journalist and quotation attribution checked. Not authored by Marie and not a current-role claim. |
 | Broadcast and conversations | [From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox](https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH) · Enterprise Thought Leadership, episode 86 | Omit date | Verified podcast guest. AI-enabled marketing workflows and go-to-market teams. Retain the supplied Spotify destination without inferring employment, performance statistics or a publication year. |
 | Press commentary | [ASOS investigating after customers receive hacking notification](https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035) · The Guardian | 6 October 2026 | Existing workbook-linked live-blog item with Marie’s named Binalyze commentary. Display label from the existing record, not a claim that this is the overall live-blog headline. |
 | Press commentary | [Threatening message to ASOS customers was ‘psychological warfare’](https://news.sky.com/story/asos-latest-customers-told-retailer-has-been-hacked-13591381?postid=12585094) · Sky News | 6 October 2026 | Existing workbook-linked update with Marie’s named Binalyze commentary. Label as written news commentary, not a broadcast appearance. Display label refers to the linked update. |
 | Syndicated press commentary | [ASOS probes ‘unauthorised activity’ after phone alerts](https://www.france24.com/en/live-news/20261006-asos-says-probing-unauthorised-activity-after-phone-alerts) · France 24 / AFP | 6 October 2026 | One representative AFP report carrying Marie’s Binalyze commentary. Syndicated reporting, not a separate France 24 interview. Use the workbook item label; confirm final publisher heading before implementation. |
 
 Keep the existing Daily Mail, Barron’s and Straits Times source links available in the related ASOS coverage list, rather than giving three versions of the same story equal prominence. Their inclusion does not establish authorship or a separate interview. No company-only item is currently promoted as a personal contribution.
+
+Lead with the range of topics and formats, giving the 2018/2019 writing, 2023 authored article, 2024 quoted commentary and 2025 insurance feature prominent places. Recent Binalyze coverage remains part of the selection, not its organising theme. Preserve source roles in item context only; do not silently add them as current roles or a new CV chronology.
 
 **Additional older quote candidate, not yet final copy:** [Facial recognition technology to enhance travel and banking in 2018](https://www.sourcesecurity.com/insights/facial-recognition-biometrics-utilised-large-scale-finance-travel-co-7121-ga.24162.html), SourceSecurity. Indexed excerpts contain an explicit Marie Clutterbuck quotation associated with Digital Barriers. The publication date and full source context remain unconfirmed; do not infer a date from “2018” in the title or classify it as an authored article. Review before adding it to the curated selection.
 
@@ -218,6 +237,7 @@ Place the full curated selection and original source links on Insights & Media, 
 - **Mirror coverage: source needed.** Supply the original article or corresponding historical workbook row; do not invent a title or personal quotation.
 - **Featured-only material: source needed.** Supply the Featured screenshots and original links, or the broader historical master, to review pieces hidden behind LinkedIn access restrictions. Keep these placeholders in the review only.
 - Infosecurity Magazine and Rail Technology Magazine were checked against direct source pages; Intersec against its limited source preview; Cisco Investments against the publisher page and indexed excerpts. These checks support the bylined selection above independently of Featured access. Do not add employers, titles, awards or CV chronology from article bios to the director profile without separate confirmation.
+- **Three supplied additions:** The cyber insurance feature was directly accessible. Computer Weekly and Solutions Review returned 403 during direct checks; their entries preserve your supplied title, date, author and role attribution, with indexed/related-source corroboration. Those checks are not a substitute for full inspection of the originals. Do not extract or invent further quotations, bylines or article details. Original-source links remain the public destinations, not corroborating articles. Obtain an accessible copy if full independent verification is needed before implementation.
 
 ### Contact
 
@@ -249,7 +269,7 @@ Label both links as personal profiles. Do not imply either is a Wilbucks company
 ## 5. Technical details and delivery after approval
 
 1. Record the corrected positioning and voice requirements as superseding earlier conflicting requirements; update architecture and launch notes to the approved page structure.
-   - Add the broader older-media and published-article review to the project task list when implementation is approved. During plan-only review, changes are limited to this plan.
+   - Add the broader older-media review and the three supplied 2023/2024/2025 article checks to the project task list when implementation is approved. During plan-only review, changes are limited to this plan.
 2. Keep TanStack Start, the shared Wilbucks shell, semantic design tokens and existing Button variants. Extend shared typed content with separate company and director records. No database, LinkedIn runtime integration or paid service is required.
 3. Build the additional pages and revised copy in the preview. Keep all useful existing anchors and media links working. Use only approved Simon wording; source limitations do not block a minimal profile.
 4. Add grounded metadata and structured data. Update launch templates for all approved URLs without deploying them.
