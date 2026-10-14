@@ -56,7 +56,8 @@ export const principles = [
 
 // Preserve the other collected links as research records, not public catalogue entries.
 export const recentPublications: Publication[] = [
- { title: "ASOS investigating after customers receive hacking notification", outlet: "The Guardian", date: "6 October 2026", url: media[0].url, category: "quoted", attribution: "Quotes Marie Wilcox with Binalyze attribution. Written live-blog update, not a broadcast appearance.", context: "Commentary on the ASOS incident. Linked update label; not the overall live-blog headline." },
+ // This linked update has no heading; retain a descriptive label rather than inventing a publisher title.
+ { title: "ASOS investigating after customers receive hacking notification", outlet: "The Guardian", date: "6 October 2026", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035", category: "quoted", attribution: "Quotes Marie Wilcox as vice president of market strategy at Binalyze at publication.", context: "Commentary on the ASOS incident in a written live-blog update." },
  ...["Cisco Investments", "Infosecurity Magazine"].flatMap(outlet => publications.filter(item => item.outlet === outlet && item.date.includes("2025"))),
 ];
 export const earlierPublications = ["9 April 2024", "30 August 2023", "10 June 2019", "1 August 2018"].flatMap(date => publications.filter(item => item.date === date));
