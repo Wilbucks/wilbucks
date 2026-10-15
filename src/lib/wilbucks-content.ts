@@ -10,9 +10,11 @@ export const focusAreas = [
   { title: "Align sales and marketing", question: "How will the plan be put into practice?", copy: "Bring the work together in a joined-up go-to-market plan. Set sales priorities, equip teams with the material and enablement or training they need, and agree measures of commercial progress. Use buyer feedback and pipeline information to refine the approach." },
 ];
 export const homeFocus = [
-  { title: "Target markets and buyers", copy: "Identify the markets, buying groups and decision-makers that matter. Understand their needs and what makes them choose." },
-  { title: "Value propositions and messaging", copy: "Turn that understanding into a proposition that explains why your offer matters, what makes it different and how it meets buyer needs." },
-  { title: "Routes to market and execution", copy: "Reach buyers through the right channels and communications at the right time. Align sales planning, enablement and training around the same go-to-market plan." },
+  { title: "Understand target markets and buyer needs", copy: "Identify the markets, buying groups and decision-makers that matter, and what they need to solve." },
+  { title: "Validate and communicate the value proposition", copy: "Test the proposition against real customer needs, then express it in clear messaging buyers understand." },
+  { title: "Choose how and when to reach people", copy: "Select the channels, communications and sales activity that reach the right people at the right time." },
+  { title: "Develop the go-to-market and communications strategy", copy: "Bring markets, proposition, messaging and channels together in one practical plan." },
+  { title: "Align sales and marketing", copy: "Support the plan with sales planning and training so both teams work from the same proposition." },
 ];
 export const media = [
   { outlet: "The Guardian", title: "ASOS investigating after customers receive hacking notification", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035", date: "6 October 2026", syndicated: false },
