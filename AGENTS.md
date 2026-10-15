@@ -16,3 +16,4 @@
 - Keep production sitemap and redirect configuration in launch templates, not served with an unapproved host, because this preview must not replace the live site.
 
 - Keep media authorship category and publication-time attribution in typed records so personal bylines, quoted commentary and company coverage cannot be silently conflated.
+- Keep homepage artwork in a browser-mounted Canvas 2D component with CSS palette tokens, bounded resolution and visibility/reduced-motion guards, so motion needs no external assets or rendering dependency.
