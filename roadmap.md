@@ -47,3 +47,8 @@
 - [x] Apply requested homepage labels and remove unwanted eyebrows/links without changing the design or artwork.
 - [x] Restore About Us and navigation, retain approved company copy, omit Working Principles/disclaimer and add grounded AI paragraph.
 - [x] Verify four-page navigation, retired redirects, desktop/mobile layouts and tests in preview only.
+
+# Marie executive profile expansion
+- [x] Update supplied executive biography, prose achievements and distinct industry roles.
+- [x] Separate quoted coverage from compact authored writing, with the podcast first.
+- [x] Check profile links, desktop/mobile layouts and tests without publishing.

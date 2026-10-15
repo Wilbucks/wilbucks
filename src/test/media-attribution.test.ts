@@ -1,7 +1,22 @@
 import { describe, expect, it } from "vitest";
-import { publications, directorIntroductions, person, simonPerson, recentPublications, earlierPublications } from "@/lib/wilbucks-content";
+import { publications, directorIntroductions, person, simonPerson, recentPublications, earlierPublications, profilePublications, profileQuotedCoverage, profileLeadership, asosCoverage } from "@/lib/wilbucks-content";
 
 describe("Supplied media attribution", () => {
+  it("keeps all five requested profile articles authored and separate from quotes", () => {
+    expect(profilePublications.map(item => item.outlet)).toEqual(["Cisco Investments", "Solutions Review", "Infosecurity Magazine", "Rail Technology Magazine", "Intersec"]);
+    expect(profilePublications.every(item => item.category === "authored")).toBe(true);
+    expect(profileQuotedCoverage.map(item => item.outlet)).toEqual(["Infosecurity Magazine", "Computer Weekly"]);
+    expect(profileQuotedCoverage.every(item => item.category === "quoted")).toBe(true);
+  });
+  it("keeps CIM, CIISec and Foundation appointments distinct", () => {
+    expect(profileLeadership.map(item => [item.organisation, item.role])).toEqual([["CIM", "Chair of the CIM South East Region"], ["CIISec", "Board Director"], ["CIISec Foundation", "Founding Trustee"]]);
+  });
+  it("uses the four supplied ASOS coverage links without duplicate outlets", () => {
+    expect(asosCoverage.map(item => item.outlet)).toEqual(["Sky News", "The Guardian", "The Standard", "Daily Mail"]);
+    expect(asosCoverage[0].url).toBe("https://news.sky.com/story/asos-latest-customers-told-retailer-has-been-hacked-13591381?postid=12584472");
+    expect(asosCoverage[2].url).toBe("https://lnkd.in/eBSM_WWr");
+    expect(asosCoverage[3].url).toBe("https://www.dailymail.com/news/article-16186489/ASOS-hacked-customers-receive-message.html");
+  });
   it("curates eight contributions including the separate podcast", () => {
     expect(recentPublications.length + earlierPublications.length + 1).toBe(8);
     expect(recentPublications.filter(item => item.date.includes("2026"))).toHaveLength(1);

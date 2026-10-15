@@ -26,10 +26,10 @@ export const media = [
 ];
 export const person = {
   "@type": "Person", "@id": "/marie-wilcox#person", name: "Marie Wilcox", jobTitle: "Director", worksFor: { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks" },
-  description: "Senior technology marketing leader with more than 20 years’ experience in positioning, product marketing, go-to-market strategy and demand generation.",
+  description: "Senior marketing leader with more than 20 years’ experience and VP and CMO-level roles across technology, cybersecurity and engineering businesses.",
   email: "marieawilcox@outlook.com", sameAs: [linkedin],
   knowsAbout: ["Go-to-market strategy", "Product marketing", "Category creation", "Demand generation", "Analyst relations", "Cybersecurity", "AI-enabled marketing"],
-  hasCredential: { "@type": "EducationalOccupationalCredential", name: "Fellow of the Chartered Institute of Marketing (FCIM)" },
+  hasCredential: { "@type": "EducationalOccupationalCredential", name: "Chartered Fellow of the Chartered Institute of Marketing (FCIM)", url: "https://www.credly.com/badges/5ffb7d43-1056-4cbf-9588-bb9d78f7ee6e/linked_in_profile" },
 };
 export const simonLinkedin = "https://www.linkedin.com/in/simon-wilcox/";
 export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", description: "Independent sales and marketing consultancy helping technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice." };
@@ -62,12 +62,19 @@ export const recentPublications: Publication[] = [
  ...["Cisco Investments", "Infosecurity Magazine"].flatMap(outlet => publications.filter(item => item.outlet === outlet && item.date.includes("2025"))),
 ];
 export const earlierPublications = ["9 April 2024", "30 August 2023", "10 June 2019", "1 August 2018"].flatMap(date => publications.filter(item => item.date === date));
-export const profilePublications = ["Cisco Investments", "Solutions Review"].flatMap(outlet => publications.filter(item => item.outlet === outlet));
+export const profilePublications = ["Cisco Investments", "Solutions Review", "Infosecurity Magazine", "Rail Technology Magazine", "Intersec"].flatMap(outlet => publications.filter(item => item.outlet === outlet && item.category === "authored"));
+export const profileQuotedCoverage = ["Infosecurity Magazine", "Computer Weekly"].flatMap(outlet => publications.filter(item => item.outlet === outlet && item.category === "quoted"));
+
+export const profileLeadership = [
+ { organisation: "CIM", role: "Chair of the CIM South East Region", copy: "I'm a Chartered Fellow of the Chartered Institute of Marketing (FCIM) and Chair of the CIM South East Region. I've hosted the region's event with Henley Business School for the past five years, bringing marketing professionals together to share ideas, experience and practical insight.", links: [{ label: "CIM South East committee", url: "https://regions.cim.co.uk/south-east/home/about/the-committee/" }, { label: "Chartered Fellow recognition", url: "https://www.credly.com/badges/5ffb7d43-1056-4cbf-9588-bb9d78f7ee6e/linked_in_profile" }] },
+ { organisation: "CIISec", role: "Board Director", copy: "I'm a Board Director of CIISec, supporting the development and recognition of the information security profession.", links: [{ label: "CIISec board", url: "https://www.ciisec.org/about/board/" }] },
+ { organisation: "CIISec Foundation", role: "Founding Trustee", copy: "I'm also a Founding Trustee of the CIISec Foundation, helping create opportunities for disadvantaged young people to access cybersecurity education and careers.", links: [] },
+];
 
 // ASOS incident coverage quoting Marie (October 2026). Journalist-written; never label as authored by Marie.
 export const asosCoverage = [
  { outlet: "Sky News", title: "‘Panic piles on pressure’: Threatening message to ASOS customers was ‘psychological warfare’", url: "https://news.sky.com/story/asos-latest-customers-told-retailer-has-been-hacked-13591381?postid=12584472" },
- { outlet: "The Guardian", title: "Asos investigating after thousands of customers get notification saying retailer has been hacked", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?page=with%3Ablock-6ac4c9ad8f08dedf5e7c6073" },
+ { outlet: "The Guardian", title: "ASOS investigating after thousands of customers get notification saying retailer has been hacked", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?page=with%3Ablock-6ac4c9ad8f08dedf5e7c6073" },
  { outlet: "The Standard", title: "ASOS issues update after customers sent hacked notification", url: "https://lnkd.in/eBSM_WWr" },
- { outlet: "Daily Mail", title: "Asos hacked: customers receive message", url: "https://www.dailymail.com/news/article-16186489/Asos-hacked-customers-receive-message.html" },
+ { outlet: "Daily Mail", title: "ASOS hacked: customers receive message", url: "https://www.dailymail.com/news/article-16186489/ASOS-hacked-customers-receive-message.html" },
 ] as const;
