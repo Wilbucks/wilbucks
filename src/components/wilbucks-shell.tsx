@@ -3,7 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { ArrowUpRight, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/wilbucks-logo.png.asset.json";
-import { email, linkedin, simonLinkedin } from "@/lib/wilbucks-content";
+import { email, linkedin, simonLinkedin, companyLinkedIn, companyDetails } from "@/lib/wilbucks-content";
 
 const navigation = [
   { label: "Home", to: "/" }, { label: "About Us", to: "/about" }, { label: "Marie Wilcox", to: "/marie-wilcox" }, { label: "Simon Wilcox", to: "/simon-wilcox" },

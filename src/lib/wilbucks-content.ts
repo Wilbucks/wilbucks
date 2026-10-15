@@ -41,12 +41,12 @@ export const media = [
 export const person = {
   "@type": "Person", "@id": "/marie-wilcox#person", name: "Marie Wilcox", jobTitle: "Director", worksFor: { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks" },
   description: "Senior marketing leader with more than 20 years’ experience and VP and CMO-level roles across technology, cybersecurity and engineering businesses.",
-  email: "marieawilcox@outlook.com", sameAs: [linkedin],
+  email: "info@wilbucks.com", sameAs: [linkedin],
   knowsAbout: ["Go-to-market strategy", "Product marketing", "Category creation", "Demand generation", "Analyst relations", "Cybersecurity", "AI-enabled marketing"],
   hasCredential: { "@type": "EducationalOccupationalCredential", name: "Chartered Fellow of the Chartered Institute of Marketing (FCIM)", url: "https://www.credly.com/badges/5ffb7d43-1056-4cbf-9588-bb9d78f7ee6e/linked_in_profile" },
 };
 export const simonLinkedin = "https://www.linkedin.com/in/simon-wilcox/";
-export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", description: "Independent sales and marketing consultancy helping technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice." };
+export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", alternateName: "Wilbucks Ltd", description: "Independent sales and marketing consultancy helping technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice.", email: "info@wilbucks.com", url: "https://www.wilbucks.com", sameAs: [companyLinkedIn], vatID: "352 5364 05", taxID: "12657721", address: { "@type": "PostalAddress", addressLocality: "Godalming", addressRegion: "Surrey", addressCountry: "GB" } };
 export const simonPerson = { "@type": "Person", "@id": "/simon-wilcox#person", name: "Simon Wilcox", sameAs: [simonLinkedin], worksFor: company, jobTitle: "Director" };
 export const directorIntroductions = [
   { name: "Marie Wilcox", path: "/marie-wilcox" as const, copy: "Senior technology marketing leader. Her experience covers positioning, product marketing, go-to-market strategy and demand generation, including the practical use of AI in marketing." },
