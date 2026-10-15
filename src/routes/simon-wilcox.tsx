@@ -7,11 +7,11 @@ import { pageHead } from "@/lib/page-head";
 import { ProfileField } from "@/components/profile-field";
 import portrait from "@/assets/simon-wilcox.jpg.asset.json";
 
-const description = "Simon Wilcox is a sales and commercial leader and a director of Wilbucks, with a technology and security background.";
+const description = "Simon Wilcox is a director of Wilbucks and a sales and commercial leader with 25+ years across cybersecurity, AI, data intelligence, software and UK government markets.";
 
 const careerNames = ["Daintta", "QinetiQ / Naimuri", "SecureCloud+", "BAE Systems Applied Intelligence", "BAE Systems Detica", "Categoric Software", "UK Government"];
 
-export const Route = createFileRoute("/simon-wilcox")({ head: () => pageHead("Simon Wilcox | Sales & Commercial Leadership | Wilbucks", description, "/simon-wilcox", { "@type": "ProfilePage", name: "Simon Wilcox", description, mainEntity: simonPerson }), component: Simon });
+export const Route = createFileRoute("/simon-wilcox")({ head: () => pageHead("Simon Wilcox | Sales & Commercial Leader, Wilbucks Director", description, "/simon-wilcox", { "@type": "ProfilePage", "@id": "https://www.wilbucks.com/simon-wilcox#webpage", url: "https://www.wilbucks.com/simon-wilcox", name: "Simon Wilcox", description, mainEntity: simonPerson }), component: Simon });
 function Simon() {
   return <>
     <section className="page-heading profile-hero"><ProfileField /><div className="page-container profile-opening"><div className="hero-enter"><h1>Simon Wilcox<span className="text-primary">.</span></h1><h2 className="profile-specialism">Sales and commercial leadership.</h2><p className="body-copy">Simon is a sales and commercial leader and a director of Wilbucks. His background includes technology and security, with a professional focus on data intelligence in security and government.</p><p className="body-copy">His areas of focus include business development, sales strategy, market entry and client relationships. He brings a commercial perspective to product strategy: how technical capability becomes a proposition a buyer can understand and assess.</p><div className="profile-actions"><Button asChild variant="editorial" size="editorial"><a href={simonLinkedin} target="_blank" rel="noopener noreferrer">Simon on LinkedIn <ArrowUpRight /></a></Button><Button asChild variant="link" className="text-link"><Link to="/marie-wilcox">Meet Marie Wilcox <ArrowUpRight /></Link></Button></div></div><img className="profile-portrait hero-enter" src={portrait.url} width={1000} height={750} alt="Simon Wilcox in a navy blazer and white shirt" fetchPriority="high" /></div></section>

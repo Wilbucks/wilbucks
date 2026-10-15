@@ -22,7 +22,7 @@ describe("Company contact and legal details", () => {
   it("shows the supplied company registration and VAT numbers", () => {
     expect(companyDetails.registrationNumber).toBe("Company Registration Number: 12657721");
     expect(companyDetails.vatNumber).toBe("VAT Number: 352 5364 05");
-    expect(company.taxID).toBe("12657721");
+    expect(company.identifier.value).toBe("12657721");
     expect(company.vatID).toBe("352 5364 05");
   });
 

@@ -40,8 +40,8 @@ describe("Supplied media attribution", () => {
   });
   it("identifies both directors as separate people connected to Wilbucks", () => {
     expect(directorIntroductions.map(item => item.name)).toEqual(["Marie Wilcox", "Simon Wilcox"]);
-    expect(person.worksFor["@id"]).toBe("/#wilbucks");
-    expect(simonPerson.worksFor["@id"]).toBe("/#wilbucks");
+    expect(person.worksFor["@id"]).toBe("https://www.wilbucks.com/#wilbucks");
+    expect(simonPerson.worksFor["@id"]).toBe("https://www.wilbucks.com/#wilbucks");
     expect(person["@id"]).not.toBe(simonPerson["@id"]);
   });
 });
