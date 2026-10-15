@@ -3,8 +3,7 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactBand, SectionHeading } from "@/components/wilbucks-shell";
 import { pageHead } from "@/lib/page-head";
-import { company, person, simonPerson, website } from "@/lib/wilbucks-content";
-import { homeFocus, company, email } from "@/lib/wilbucks-content";
+import { homeFocus, company, email, person, simonPerson, website } from "@/lib/wilbucks-content";
 import { SignalField } from "@/components/signal-field";
 import { Directors } from "@/components/directors";
 
