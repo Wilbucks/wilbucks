@@ -63,11 +63,10 @@ const services = [
 export const company = {
   "@type": "ProfessionalService", "@id": orgRef["@id"], name: "Wilbucks", legalName: "Wilbucks Ltd", url: `${site}/`,
   description: "Independent sales and marketing consultancy helping B2B technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice.",
-  email: "info@wilbucks.com", sameAs: [companyLinkedIn], vatID: "GB352536405",
+  email: "info@wilbucks.com", sameAs: [companyLinkedIn], vatID: "352 5364 05",
   identifier: { "@type": "PropertyValue", propertyID: "Companies House registration number", value: "12657721" },
   address: { "@type": "PostalAddress", addressLocality: "Godalming", addressRegion: "Surrey", addressCountry: "GB" },
   areaServed: { "@type": "Country", name: "United Kingdom" },
-  founder: [{ "@id": person["@id"] }, { "@id": simonPerson["@id"] }],
   employee: [{ "@id": person["@id"] }, { "@id": simonPerson["@id"] }],
   knowsAbout: ["Go-to-market strategy", "Value propositions", "B2B sales and marketing", "Sales planning", "Cybersecurity", "AI", "Technology consulting"],
   hasOfferCatalog: { "@type": "OfferCatalog", name: "Wilbucks services", itemListElement: services.map(([name, description]) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name, description, provider: orgRef } })) },
