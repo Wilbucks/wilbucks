@@ -28,3 +28,8 @@
 - [x] Foreground Simon's sales background and Marie's technology marketing experience equally.
 - [x] Curate eight media contributions, retaining original sources and historical attribution.
 - [x] Verify navigation, media selection, metadata and readable layouts without publishing.
+
+# Go-to-market copy revision
+- [x] Update Home, About, Expertise and related company summaries to the supplied integrated go-to-market positioning.
+- [x] Preserve directors, media, logo, routes, anchors and preview noindex; check metadata consistency.
+- [x] Run relevant tests and verify desktop, tablet and mobile copy and enquiry journeys without publishing.
