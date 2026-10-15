@@ -52,3 +52,4 @@
 - [x] Update supplied executive biography, prose achievements and distinct industry roles.
 - [x] Separate quoted coverage from compact authored writing, with the podcast first.
 - [x] Check profile links, desktop/mobile layouts and tests without publishing.
+- [x] Remove the AI, Marketing & Industry Conversations and speaking-opportunity blocks, keeping earlier sections and their order.
