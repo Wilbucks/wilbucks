@@ -6,7 +6,7 @@ import logo from "@/assets/wilbucks-logo.png.asset.json";
 import { email, linkedin, simonLinkedin } from "@/lib/wilbucks-content";
 
 const navigation = [
-  { label: "Home", to: "/" }, { label: "Marie Wilcox", to: "/marie-wilcox" }, { label: "Simon Wilcox", to: "/simon-wilcox" },
+  { label: "Home", to: "/" }, { label: "About Us", to: "/about" }, { label: "Marie Wilcox", to: "/marie-wilcox" }, { label: "Simon Wilcox", to: "/simon-wilcox" },
 ] as const;
 
 export function WilbucksShell({ children }: { children: ReactNode }) {
@@ -40,8 +40,8 @@ export function ContactBand({ actionLabel = "Contact Wilbucks" }: { actionLabel?
   return <section className="contact-band" id="subscribe"><div className="page-container contact-inner" data-reveal><div><p className="eyebrow">Contact Wilbucks</p><h2>Have a sales or marketing question?</h2></div><div><Button asChild variant="editorial" size="editorial"><a href={email}>{actionLabel} <ArrowUpRight /></a></Button></div></div></section>;
 }
 
-export function SectionHeading({ number, label, title, children }: { number: string; label: string; title: string; children?: ReactNode }) {
-  return <div className="section-heading" data-reveal><p className="eyebrow"><span>{number} /</span> {label}</p><div><h2>{title}</h2>{children}</div></div>;
+export function SectionHeading({ number, label, title, children }: { number?: string; label: string; title: string; children?: ReactNode }) {
+  return <div className="section-heading" data-reveal><p className="eyebrow">{number && <span>{number} /</span>} {label}</p><div><h2>{title}</h2>{children}</div></div>;
 }
 
 export function TextLink({ children, to }: { children: ReactNode; to: "/" | "/marie-wilcox" | "/simon-wilcox" }) {
