@@ -151,7 +151,7 @@
 .profile-opening--solo { grid-template-columns: 1fr; }
 
 /* Writing & Podcasts: the featured conversation uses the article list's type system. */
-.podcast-featured { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 32px; align-items: start; margin-top: 40px; padding: 30px 34px; background: color-mix(in oklch, var(--primary) 10%, var(--card)); border: 1px solid color-mix(in oklch, var(--primary) 18%, var(--border)); border-left: 3px solid var(--primary); border-radius: 4px; }
+.podcast-featured { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: 32px; align-items: start; margin-top: 40px; padding: 30px 34px; background: color-mix(in oklch, var(--primary) 14%, var(--card)); border: 1px solid color-mix(in oklch, var(--primary) 22%, var(--border)); border-left: 3px solid var(--primary); border-radius: 4px; }
 .podcast-featured h3 { font-family: var(--font-sans); font-size: 19px; line-height: 1.6; font-weight: 500; overflow-wrap: anywhere; }
 .podcast-featured h3 a { color: var(--foreground); }
 .podcast-featured h3 a:hover { color: var(--primary); }
