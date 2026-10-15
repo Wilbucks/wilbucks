@@ -3,17 +3,16 @@ export const linkedin = "https://uk.linkedin.com/in/marieclutterbuck";
 export const podcast = "https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH";
 export const organisations = ["Binalyze", "Panaseer", "McLaren Applied", "Digital Barriers", "Siemens", "BAE Systems"];
 export const focusAreas = [
-  { title: "Commercial strategy and market entry", question: "Where is the strongest commercial opportunity?", copy: "Examine target accounts, buying requirements and routes to market before committing sales and marketing effort. Define what entering a market would require, rather than treating interest as evidence of demand." },
-  { title: "Sales strategy and business development", question: "How are opportunities developed and pursued?", copy: "Review account priorities, buyer conversations and the decisions that move a sale forward. Consider how client relationships support further business." },
-  { title: "Positioning and propositions", question: "Can a buyer explain why they would choose your product?", copy: "Establish the relevant use case, the alternatives and the evidence behind the proposition. Use that in sales material and marketing messages." },
-  { title: "Product marketing and go-to-market", question: "What does sales need to take the product to market?", copy: "Work through audiences, use cases and launch priorities. Make product information usable in a buying conversation, not just accurate as a technical description." },
-  { title: "Demand generation and pipeline", question: "Where does marketing interest stop becoming a sales opportunity?", copy: "Examine targeting, channels, qualification and follow-up. Agree what counts as a useful opportunity and how sales and marketing assess it." },
-  { title: "AI-enabled marketing", question: "Which tasks are worth changing?", copy: "Assess uses such as research, content preparation and workflow automation against information quality, time spent and review requirements. Do not adopt a tool simply because it uses AI." },
+  { title: "Understand the target market", question: "Where does your offer have the strongest relevance?", copy: "Identify the most relevant markets and segments, then the buying groups and decision-makers within them. This gives sales and marketing a shared view of where to focus." },
+  { title: "Understand buyers and their needs", question: "What makes buyers choose?", copy: "Within those markets, clarify the problems buyers need to solve, what matters in their decisions and how they assess their options. Use buyer conversations and available evidence to guide the proposition." },
+  { title: "Shape the value proposition and messaging", question: "Why should this offer matter to them?", copy: "Use that understanding to explain the value of your technology or service, why it is different and how it addresses buyer needs. Develop messaging that makes sense to the people involved in the decision." },
+  { title: "Reach the right people at the right time", question: "How will the message reach buyers?", copy: "Choose the channels, communications and sales activity that fit your audience and their decision journey. Put the proposition to work in a go-to-market and communications strategy, from initial awareness through to a buying conversation." },
+  { title: "Align sales and marketing", question: "How will the plan be put into practice?", copy: "Bring the work together in a joined-up go-to-market plan. Set sales priorities, equip teams with the material and enablement or training they need, and agree measures of commercial progress. Use buyer feedback and pipeline information to refine the approach." },
 ];
 export const homeFocus = [
-  { title: "Propositions and positioning", copy: "What are buyers being asked to buy, and why should they choose it over the alternatives?" },
-  { title: "Sales strategy and routes to market", copy: "Which customers deserve attention? How will you reach them and develop the relationship?" },
-  { title: "Demand generation", copy: "Is marketing reaching potential buyers and producing opportunities that sales can pursue?" },
+  { title: "Target markets and buyers", copy: "Identify the markets, buying groups and decision-makers that matter. Understand their needs and what makes them choose." },
+  { title: "Value propositions and messaging", copy: "Turn that understanding into a proposition that explains why your offer matters, what makes it different and how it meets buyer needs." },
+  { title: "Routes to market and execution", copy: "Reach buyers through the right channels and communications at the right time. Align sales planning, enablement and training around the same go-to-market plan." },
 ];
 export const media = [
   { outlet: "The Guardian", title: "ASOS investigating after customers receive hacking notification", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035", date: "6 October 2026", syndicated: false },
@@ -31,7 +30,7 @@ export const person = {
   hasCredential: { "@type": "EducationalOccupationalCredential", name: "Fellow of the Chartered Institute of Marketing (FCIM)" },
 };
 export const simonLinkedin = "https://www.linkedin.com/in/simon-wilcox/";
-export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", description: "Independent sales and marketing consultancy for technology businesses." };
+export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", description: "Independent sales and marketing consultancy helping technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice." };
 export const simonPerson = { "@type": "Person", "@id": "/simon-wilcox#person", name: "Simon Wilcox", sameAs: [simonLinkedin], worksFor: company, jobTitle: "Director" };
 export const directorIntroductions = [
   { name: "Marie Wilcox", path: "/marie-wilcox" as const, copy: "Senior technology marketing leader. Her experience covers positioning, product marketing, go-to-market strategy and demand generation, including the practical use of AI in marketing." },

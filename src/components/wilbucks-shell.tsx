@@ -38,8 +38,8 @@ export function WilbucksShell({ children }: { children: ReactNode }) {
   </>;
 }
 
-export function ContactBand() {
-  return <section className="contact-band" id="subscribe"><div className="page-container contact-inner" data-reveal><div><p className="eyebrow">Contact Wilbucks</p><h2>Have a sales or marketing question?</h2></div><div><Button asChild variant="editorial" size="editorial"><Link to="/contact">Contact Wilbucks <ArrowUpRight /></Link></Button></div></div></section>;
+export function ContactBand({ actionLabel = "Contact Wilbucks" }: { actionLabel?: string }) {
+  return <section className="contact-band" id="subscribe"><div className="page-container contact-inner" data-reveal><div><p className="eyebrow">Contact Wilbucks</p><h2>Have a sales or marketing question?</h2></div><div><Button asChild variant="editorial" size="editorial"><Link to="/contact">{actionLabel} <ArrowUpRight /></Link></Button></div></div></section>;
 }
 
 export function SectionHeading({ number, label, title, children }: { number: string; label: string; title: string; children?: ReactNode }) {
