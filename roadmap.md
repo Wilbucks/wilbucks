@@ -55,7 +55,8 @@
 - [x] Remove the AI, Marketing & Industry Conversations and speaking-opportunity blocks, keeping earlier sections and their order.
 
 # Footer legal details and company mailbox
-- [ ] Route every email link on the site to info@wilbucks.com, including Marie's profile and structured data.
-- [ ] Remove the footer consultancy line; add the supplied copyright, registration, VAT, LinkedIn page, contact and office details.
-- [ ] Verify footer and contact links on desktop and phone, run tests, keep preview-only status.
+- [x] Route every email link on the site to info@wilbucks.com, including Marie's profile and structured data.
+- [x] Remove the footer consultancy line; add the supplied copyright, registration, VAT, LinkedIn page, contact and office details.
+- [x] Verify footer and contact links on desktop and phone, run tests, keep preview-only status.
+
 
