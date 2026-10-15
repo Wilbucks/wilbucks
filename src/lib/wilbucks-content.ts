@@ -63,3 +63,11 @@ export const recentPublications: Publication[] = [
 ];
 export const earlierPublications = ["9 April 2024", "30 August 2023", "10 June 2019", "1 August 2018"].flatMap(date => publications.filter(item => item.date === date));
 export const profilePublications = ["Cisco Investments", "Solutions Review"].flatMap(outlet => publications.filter(item => item.outlet === outlet));
+
+// ASOS incident coverage quoting Marie (October 2026). Journalist-written; never label as authored by Marie.
+export const asosCoverage = [
+ { outlet: "Sky News", title: "‘Panic piles on pressure’: Threatening message to ASOS customers was ‘psychological warfare’", url: "https://news.sky.com/story/asos-latest-customers-told-retailer-has-been-hacked-13591381?postid=12584472" },
+ { outlet: "The Guardian", title: "Asos investigating after thousands of customers get notification saying retailer has been hacked", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?page=with%3Ablock-6ac4c9ad8f08dedf5e7c6073" },
+ { outlet: "The Standard", title: "ASOS issues update after customers sent hacked notification", url: "https://lnkd.in/eBSM_WWr" },
+ { outlet: "Daily Mail", title: "Asos hacked: customers receive message", url: "https://www.dailymail.com/news/article-16186489/Asos-hacked-customers-receive-message.html" },
+] as const;
