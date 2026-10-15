@@ -68,3 +68,9 @@
 # Marie profile wording
 - [x] Remove the pipeline, media-impression and category-count figures from Marie's Experience narrative; keep the highlights in prose.
 - [x] Verify no achievement figures render on desktop and phone, run tests, keep preview-only status.
+
+## SEO and AEO first round
+- [x] Production canonicals, og/twitter tags, en-GB locale; preview stays noindex (launch flag)
+- [x] ProfessionalService + Person + WebSite/AboutPage/ProfilePage JSON-LD
+- [x] Four-page launch sitemap/robots generator; retired routes 301 home
+- [x] About "Who we work with" paragraph
