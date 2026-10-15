@@ -21,14 +21,16 @@ describe("App routing", () => {
     ["/expertise", expertiseRoute], ["/directors", directorsRoute],
     ["/press-coverage", mediaRoute], ["/contact", contactRoute],
   ])("keeps %s permanently redirected home", (_path, route) => {
+    const beforeLoad = route.options.beforeLoad;
+    if (!beforeLoad) throw new Error("Expected a retired route guard");
     try {
-      route.options.beforeLoad?.();
+      Reflect.apply(beforeLoad, undefined, []);
       throw new Error("Expected a redirect");
     } catch (error) {
       expect(isRedirect(error)).toBe(true);
       if (!isRedirect(error)) throw error;
       expect(error.options.to).toBe("/");
-      expect(error.options.statusCode).toBe(301);
+      expect(error.status).toBe(301);
     }
   });
 
