@@ -44,6 +44,6 @@
 - [x] Verify one line per sentence at phone, tablet and desktop widths, run tests and keep preview-only status.
 
 # Homepage labels and About Us restoration
-- [ ] Apply requested homepage labels and remove unwanted eyebrows/links without changing the design or artwork.
-- [ ] Restore About Us and navigation, retain approved company copy, omit Working Principles/disclaimer and add grounded AI paragraph.
-- [ ] Verify four-page navigation, retired redirects, desktop/mobile layouts and tests in preview only.
+- [x] Apply requested homepage labels and remove unwanted eyebrows/links without changing the design or artwork.
+- [x] Restore About Us and navigation, retain approved company copy, omit Working Principles/disclaimer and add grounded AI paragraph.
+- [x] Verify four-page navigation, retired redirects, desktop/mobile layouts and tests in preview only.
