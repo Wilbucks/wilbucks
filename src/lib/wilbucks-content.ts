@@ -1,4 +1,18 @@
-export const email = "mailto:marieawilcox@outlook.com";
+// Site-wide contact address. Marie's personal address stays out of the public
+// contact links and structured data: Wilbucks is reached through info@.
+export const email = "mailto:info@wilbucks.com";
+export const companyLinkedIn = "https://www.linkedin.com/company/wilbucks-ltd/";
+export const companyDetails = {
+  copyright: "Copyright 2026",
+  legalName: "Wilbucks Ltd",
+  website: "https://www.wilbucks.com",
+  websiteLabel: "www.wilbucks.com",
+  registrationNumber: "Company Registration Number: 12657721",
+  vatNumber: "VAT Number: 352 5364 05",
+  email: "info@wilbucks.com",
+  office: ["Wilbucks Ltd", "Godalming, Surrey. United Kingdom"],
+};
+
 export const linkedin = "https://uk.linkedin.com/in/marieclutterbuck";
 export const podcast = "https://open.spotify.com/episode/3H6HWOa1QC6c2XzBZmzUsH";
 export const organisations = ["Binalyze", "Panaseer", "McLaren Applied", "Digital Barriers", "Siemens", "BAE Systems"];
