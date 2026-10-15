@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactBand, SectionHeading, TextLink } from "@/components/wilbucks-shell";
-import { company, email } from "@/lib/wilbucks-content";
+import { company, email, person, simonPerson, website } from "@/lib/wilbucks-content";
 import { pageHead } from "@/lib/page-head";
 import { AboutField } from "@/components/about-field";
 
 export const Route = createFileRoute("/about")({
-  head: () => pageHead("About Wilbucks | B2B Sales & Go-to-Market Experience", "Marie and Simon Wilcox bring more than 20 years of B2B sales and marketing experience between them to value propositions, communications and go-to-market plans.", "/about", company),
+  head: () => pageHead("About Wilbucks | UK Go-to-Market Consultancy for Technology Businesses", "Wilbucks is a small UK consultancy led by Marie and Simon Wilcox, helping technology businesses from start-up to PE-backed shape value propositions, go-to-market and sales plans.", "/about", { "@graph": [{ "@type": "AboutPage", "@id": "https://www.wilbucks.com/about#webpage", url: "https://www.wilbucks.com/about", name: "About Wilbucks", about: { "@id": company["@id"] }, isPartOf: { "@id": website["@id"] } }, company, person, simonPerson] }),
   component: About,
 });
 
@@ -24,6 +24,8 @@ function About() {
       <p className="body-copy">Without a solid, clearly communicated value proposition, targeted at the right audience and meeting a real customer need, a business will struggle to achieve revenue or investment.</p>
       <p className="body-copy">We help make sure your products and services are right for your customers, investors and markets by developing the right sales and marketing strategies to support growth, investment and ROI.</p>
       <p className="body-copy">Where it adds real value, we also help businesses identify opportunities to embed AI into their systems and processes. The focus is practical: using AI to improve how work gets done, support better decisions and make teams more effective, with a clear purpose rather than technology for its own sake.</p>
+      <h3>Who we work with</h3>
+      <p className="body-copy">We work with UK B2B technology businesses, from founder-led start-ups to venture-backed and private equity-backed companies. Our experience is strongest in software, cybersecurity, AI, data and engineering, where a clear proposition and a joined-up sales and marketing plan make the biggest difference.</p>
       <div className="profile-actions"><TextLink to="/marie-wilcox">Meet Marie Wilcox</TextLink><TextLink to="/simon-wilcox">Meet Simon Wilcox</TextLink></div>
     </SectionHeading></div></section>
     <ContactBand actionLabel="Talk to us" />

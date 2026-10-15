@@ -38,16 +38,41 @@ export const media = [
   { outlet: "The Straits Times", title: "Online fashion giant ASOS probes hacking phone alerts", url: "https://www.straitstimes.com/world/europe/online-fashion-giant-asos-probes-unauthorised-activity-after-hacking-phone-alerts?ref=search-results", date: "7 October 2026", syndicated: true },
   { outlet: "Barron’s", title: "ASOS says probing ‘unauthorised activity’ after phone alerts", url: "https://www.barrons.com/news/asos-says-probing-unauthorised-activity-after-phone-alerts-c17c53a5?eafs_enabled=false", date: "6 October 2026", syndicated: true },
 ];
+const site = "https://www.wilbucks.com";
+const orgRef = { "@id": `${site}/#wilbucks` };
 export const person = {
-  "@type": "Person", "@id": "/marie-wilcox#person", name: "Marie Wilcox", jobTitle: "Director", worksFor: { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks" },
+  "@type": "Person", "@id": `${site}/marie-wilcox#person`, name: "Marie Wilcox", url: `${site}/marie-wilcox`, jobTitle: "Director", worksFor: orgRef,
   description: "Senior marketing leader with more than 20 years’ experience and VP and CMO-level roles across technology, cybersecurity and engineering businesses.",
   email: "info@wilbucks.com", sameAs: [linkedin],
   knowsAbout: ["Go-to-market strategy", "Product marketing", "Category creation", "Demand generation", "Analyst relations", "Cybersecurity", "AI-enabled marketing"],
   hasCredential: { "@type": "EducationalOccupationalCredential", name: "Chartered Fellow of the Chartered Institute of Marketing (FCIM)", url: "https://www.credly.com/badges/5ffb7d43-1056-4cbf-9588-bb9d78f7ee6e/linked_in_profile" },
 };
 export const simonLinkedin = "https://www.linkedin.com/in/simon-wilcox/";
-export const company = { "@type": "Organization", "@id": "/#wilbucks", name: "Wilbucks", alternateName: "Wilbucks Ltd", description: "Independent sales and marketing consultancy helping technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice.", email: "info@wilbucks.com", url: "https://www.wilbucks.com", sameAs: [companyLinkedIn], vatID: "352 5364 05", taxID: "12657721", address: { "@type": "PostalAddress", addressLocality: "Godalming", addressRegion: "Surrey", addressCountry: "GB" } };
-export const simonPerson = { "@type": "Person", "@id": "/simon-wilcox#person", name: "Simon Wilcox", sameAs: [simonLinkedin], worksFor: company, jobTitle: "Director" };
+export const simonPerson = {
+  "@type": "Person", "@id": `${site}/simon-wilcox#person`, name: "Simon Wilcox", url: `${site}/simon-wilcox`, jobTitle: "Director", worksFor: orgRef, sameAs: [simonLinkedin],
+  description: "Sales and commercial leader with a background in software engineering, cybersecurity, data intelligence and government and national-security markets.",
+  knowsAbout: ["Business development", "Government and national-security markets", "Cybersecurity", "Data intelligence", "AI", "Proposition and go-to-market development", "Partner ecosystems", "Bids", "Commercial leadership"],
+};
+const services = [
+  ["Target market and buyer insight", "Identifying the markets, buying groups and decision-makers that matter, and what they need to solve."],
+  ["Value proposition development", "Testing a proposition against real customer needs and expressing it in clear messaging."],
+  ["Go-to-market and communications strategy", "Bringing markets, proposition, messaging and channels together in one practical plan."],
+  ["Sales planning and training", "Aligning sales and marketing so both teams work from the same plan."],
+  ["Practical AI adoption", "Identifying where AI can usefully be embedded into systems and processes."],
+];
+export const company = {
+  "@type": "ProfessionalService", "@id": orgRef["@id"], name: "Wilbucks", legalName: "Wilbucks Ltd", url: `${site}/`,
+  description: "Independent sales and marketing consultancy helping B2B technology businesses understand markets and buyers, develop value propositions and messaging, and put go-to-market plans into practice.",
+  email: "info@wilbucks.com", sameAs: [companyLinkedIn], vatID: "352 5364 05",
+  identifier: { "@type": "PropertyValue", propertyID: "Companies House registration number", value: "12657721" },
+  address: { "@type": "PostalAddress", addressLocality: "Godalming", addressRegion: "Surrey", addressCountry: "GB" },
+  areaServed: { "@type": "Country", name: "United Kingdom" },
+  employee: [{ "@id": person["@id"] }, { "@id": simonPerson["@id"] }],
+  knowsAbout: ["Go-to-market strategy", "Value propositions", "B2B sales and marketing", "Sales planning", "Cybersecurity", "AI", "Technology consulting"],
+  hasOfferCatalog: { "@type": "OfferCatalog", name: "Wilbucks services", itemListElement: services.map(([name, description]) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name, description, provider: orgRef } })) },
+};
+export const website = { "@type": "WebSite", "@id": `${site}/#website`, name: "Wilbucks", url: `${site}/`, inLanguage: "en-GB", publisher: orgRef };
+
 export const directorIntroductions = [
   { name: "Marie Wilcox", path: "/marie-wilcox" as const, copy: "Senior technology marketing leader. Her experience covers positioning, product marketing, go-to-market strategy and demand generation, including the practical use of AI in marketing." },
   { name: "Simon Wilcox", path: "/simon-wilcox" as const, copy: "Sales and commercial leader with a technology and security background. His focus covers business development, sales strategy, market entry and client relationships." },

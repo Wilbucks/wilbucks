@@ -11,7 +11,7 @@
 
 - Keep company pages and separate director profiles under the shared Wilbucks shell, with retired content routes redirecting home, because company identity must remain distinct from individual reputations and old links must still resolve.
 - Define editorial styling and semantic colors in the global stylesheet and use Button variants for actions to keep presentation consistent.
-- Keep profile structured data limited to supplied identity and expertise; use relative canonical metadata until the final integration path is confirmed.
+- Keep structured data limited to supplied identity and expertise, and point canonicals, og:url and schema @ids at the production origin in page-head.ts; robots meta stays noindex unless a launch build sets VITE_ALLOW_INDEXING=true, so the preview can never be indexed by accident.
 - Keep browser-safe typed content and metadata in shared modules so expertise and verified media remain consistent across pages without a database.
 - Keep production sitemap and redirect configuration in launch templates, not served with an unapproved host, because this preview must not replace the live site.
 

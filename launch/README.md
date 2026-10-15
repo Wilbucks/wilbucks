@@ -5,9 +5,9 @@ This is an unpublished integration preview. No live-site, domain or DNS change i
 - Confirm current company/legal details and the public business email before adding them to the new site.
 - Confirm whether the Mailchimp contact form and newsletter have active users or required delivery workflows. Direct email links currently replace neither live function.
 - Choose the final hosting/integration path and obtain explicit launch approval.
-- Keep `/` and `/marie-wilcox` unchanged. Preserve `/press-coverage` as Insights & Media and `/marie-wilcox#media`. The previous proposed press redirect is superseded; no redirect is activated.
-- Remove preview `noindex` metadata only on approved launch. Set canonical URLs to the final origin and integration path.
-- Generate the production XML sitemap with `/`, `/about`, `/directors`, `/marie-wilcox`, `/simon-wilcox`, `/expertise`, `/press-coverage` and `/contact` at that final origin using `python3 launch/generate-search-files.py <approved-https-origin> <output-directory>`. Do not expose a placeholder or live-Mailchimp sitemap in this preview.
+- Final architecture is four pages: `/`, `/about`, `/marie-wilcox`, `/simon-wilcox`. `/expertise`, `/directors`, `/press-coverage` and `/contact` return 301 redirects to `/`.
+- Canonicals, og:url and JSON-LD already point at https://www.wilbucks.com (`src/lib/page-head.ts`). On approved launch, build with `VITE_ALLOW_INDEXING=true` to switch robots meta from noindex to index. Leave it unset everywhere else.
+- Generate the production XML sitemap with the four live pages at the final origin using `python3 launch/generate-search-files.py <approved-https-origin> <output-directory>`. Do not expose a placeholder or live-Mailchimp sitemap in this preview.
 - Production robots.txt: allow crawling and reference the final absolute sitemap URL. The preview allows crawlers to read its noindex metadata and does not advertise a production sitemap.
 - Recheck media links, portrait, keyboard navigation, contact links, mobile layouts and performance on the final host.
 - Existing reCAPTCHA, newsletter popup, cookie notice, info@wilbucks.com, company registration 12657721 and VAT 352 5364 05 were observed during the audit, not verified as current. No form submissions or live changes were made.

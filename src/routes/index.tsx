@@ -3,12 +3,12 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactBand, SectionHeading } from "@/components/wilbucks-shell";
 import { pageHead } from "@/lib/page-head";
-import { homeFocus, company, email } from "@/lib/wilbucks-content";
+import { homeFocus, company, email, person, simonPerson, website } from "@/lib/wilbucks-content";
 import { SignalField } from "@/components/signal-field";
 import { Directors } from "@/components/directors";
 
 export const Route = createFileRoute("/")({
-  head: () => pageHead("Wilbucks | Go-to-Market, Sales & Marketing Consultancy", "Wilbucks helps technology businesses understand markets and buyers, shape value propositions and messaging, and put go-to-market and sales plans into practice.", "/", { "@type": "WebSite", name: "Wilbucks", publisher: company, mainEntity: company }),
+  head: () => pageHead("Wilbucks | Go-to-Market & B2B Sales and Marketing Consultancy", "UK consultancy helping B2B technology businesses validate value propositions, build go-to-market strategy and align sales and marketing. Led by Marie and Simon Wilcox.", "/", { "@graph": [website, company, person, simonPerson] }),
   component: HomePage,
 });
 
