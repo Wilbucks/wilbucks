@@ -90,6 +90,7 @@
 .hero-footnote { border-color: var(--hero-rule); color: var(--hero-muted); margin-top: 45px; padding-right: 55px; }
 .motion-toggle { position: absolute; right: max(32px, calc((100% - 1240px) / 2)); bottom: 16px; z-index: 3; color: var(--hero-muted); border: 1px solid var(--hero-rule); border-radius: 50%; }
 .motion-toggle:hover { color: var(--hero-foreground); background: var(--hero-rule); }
+@media(prefers-reduced-motion: reduce) { .motion-toggle { display: none; } }
 .home-hero a:focus-visible,.motion-toggle:focus-visible { outline-color: var(--signal-teal); }
 #perspective { position: relative; }
 #perspective::before { content: ''; position: absolute; left: 0; top: 0; width: 32%; height: 3px; background: var(--primary); }
