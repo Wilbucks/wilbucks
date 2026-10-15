@@ -49,6 +49,6 @@
 - [x] Verify four-page navigation, retired redirects, desktop/mobile layouts and tests in preview only.
 
 # Marie executive profile expansion
-- [ ] Update supplied executive biography, prose achievements and distinct industry roles.
-- [ ] Separate quoted coverage from compact authored writing, with the podcast first.
-- [ ] Check profile links, desktop/mobile layouts and tests without publishing.
+- [x] Update supplied executive biography, prose achievements and distinct industry roles.
+- [x] Separate quoted coverage from compact authored writing, with the podcast first.
+- [x] Check profile links, desktop/mobile layouts and tests without publishing.
