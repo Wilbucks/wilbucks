@@ -7,7 +7,17 @@ export function PublicationList({ items }: { items: Publication[] }) {
 }
 
 export function Podcast() {
-  return <article className="podcast-row" data-reveal><div><p className="eyebrow">Podcast / Marie Wilcox</p><p>Enterprise Thought Leadership / Episode 86</p></div><div><h3>From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox</h3><p>Marie discusses AI-enabled marketing workflows.</p></div><Button asChild variant="link" className="text-link"><a href={podcast} target="_blank" rel="noopener noreferrer"><Headphones /> Listen on Spotify <ArrowUpRight /></a></Button></article>;
+  return <article className="podcast-featured" data-reveal>
+    <div>
+      <p className="text-xs leading-6 text-muted-foreground">Enterprise Thought Leadership<br />Episode 86</p>
+      <p className="eyebrow mt-1 text-primary">Podcast / Marie Wilcox</p>
+    </div>
+    <div>
+      <h3><a href={podcast} target="_blank" rel="noopener noreferrer">From SDRs to AI Agents: Building Marketing’s Agentic Future with Marie Wilcox</a></h3>
+      <p className="podcast-featured__copy">Marie discusses AI-enabled marketing workflows.</p>
+      <Button asChild variant="link" className="text-link"><a href={podcast} target="_blank" rel="noopener noreferrer"><Headphones /> Listen on Spotify <ArrowUpRight /></a></Button>
+    </div>
+  </article>;
 }
 
 export function CompactPublicationList({ items, category }: { items: ReadonlyArray<{ outlet: string; title: string; url: string; date?: string; attribution?: string }>; category: "authored" | "quoted" }) {
