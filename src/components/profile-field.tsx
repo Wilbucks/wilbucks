@@ -49,7 +49,7 @@ export function ProfileField() {
           if (c === 0) context.moveTo(x, y); else context.lineTo(x, y);
         }
         context.strokeStyle = glow > .05 ? lime : r % 5 === 0 ? blue : teal;
-        context.globalAlpha = (.08 + .32 * persp) * (1 + glow * 1.6);
+        context.globalAlpha = (.14 + .46 * persp) * (1 + glow * 1.6);
         context.lineWidth = r % 5 === 0 ? 1.1 : .8;
         context.stroke();
       }
