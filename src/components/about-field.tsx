@@ -44,7 +44,7 @@ export function AboutField() {
           if (k === 0) context.moveTo(x, y); else context.lineTo(x, y);
         }
         context.strokeStyle = glow > .05 ? lime : i % 6 === 0 ? blue : teal;
-        context.globalAlpha = (.42 - t * .3) * (1 + glow * 1.4);
+        context.globalAlpha = (.62 - t * .4) * (1 + glow * 1.4);
         context.lineWidth = i % 6 === 0 ? 1.1 : .75;
         context.stroke();
       }
