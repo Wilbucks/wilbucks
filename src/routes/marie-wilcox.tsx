@@ -8,7 +8,7 @@ import { email, linkedin, organisations, profilePublications, profileQuotedCover
 import { CompactPublicationList, Podcast } from "@/components/media-selection";
 import portrait from "@/assets/marie-wilcox.jpg.asset.json";
 
-const description = "Marie Wilcox is a senior marketing leader with VP and CMO-level experience across technology, cybersecurity, AI and engineering, specialising in category creation and go-to-market strategy.";
+const description = "Marie Wilcox is a director of Wilbucks and a senior marketing leader with VP and CMO-level experience across technology, cybersecurity, AI and engineering, specialising in category creation and go-to-market strategy.";
 export const Route = createFileRoute("/marie-wilcox")({
   head: () => pageHead("Marie Wilcox | Technology Marketing Leader & Wilbucks Director", description, "/marie-wilcox", { "@type": "ProfilePage", "@id": "https://www.wilbucks.com/marie-wilcox#webpage", url: "https://www.wilbucks.com/marie-wilcox", name: "Marie Wilcox", description, mainEntity: person }),
   component: MariePage,
