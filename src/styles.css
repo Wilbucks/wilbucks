@@ -148,3 +148,4 @@
 .profile-dark .text-link, .profile-dark a { color: var(--signal-teal); }
 .profile-dark a:focus-visible { outline-color: var(--signal-teal); }
 @media(max-width: 767px) { .profile-hero { padding-block: 44px 48px; }.profile-hero::after { background: color-mix(in oklch, var(--hero-canvas) 82%, transparent); }.profile-hero .profile-portrait { box-shadow: 8px 8px 0 0 color-mix(in oklch, var(--signal-teal) 55%, transparent); } }
+.profile-opening--solo { grid-template-columns: 1fr; }
