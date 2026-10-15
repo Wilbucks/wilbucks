@@ -60,3 +60,7 @@
 - [x] Verify footer and contact links on desktop and phone, run tests, keep preview-only status.
 
 
+
+# Simon profile wording
+- [x] Remove all revenue, order-growth and pipeline figures from Simon's Experience narrative; use generic descriptions.
+- [x] Verify no figures appear in rendered text on desktop and phone, run tests, keep preview-only status.
