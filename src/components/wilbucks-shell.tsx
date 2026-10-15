@@ -3,7 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { ArrowUpRight, ArrowRight, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/wilbucks-logo.png.asset.json";
-import { email, linkedin, simonLinkedin } from "@/lib/wilbucks-content";
+import { email, linkedin, simonLinkedin, companyLinkedIn, companyDetails } from "@/lib/wilbucks-content";
 
 const navigation = [
   { label: "Home", to: "/" }, { label: "About Us", to: "/about" }, { label: "Marie Wilcox", to: "/marie-wilcox" }, { label: "Simon Wilcox", to: "/simon-wilcox" },
@@ -32,7 +32,10 @@ export function WilbucksShell({ children }: { children: ReactNode }) {
       {open && <nav id="mobile-navigation" className="mobile-menu" aria-label="Mobile navigation">{navigation.map(item => <Link key={item.to} to={item.to} onClick={() => setOpen(false)} aria-current={pathname === item.to ? "page" : undefined}>{item.label}<ArrowUpRight size={18} /></Link>)}</nav>}
     </header>
     <main id="main-content" tabIndex={-1}>{children}</main>
-    <footer className="site-footer"><div className="page-container footer-top"><Link to="/" className="brand"><img src={logo.url} width="42" height="40" alt="" /><span>Wilbucks.</span></Link><p>Independent sales & marketing consultancy.</p><div className="footer-links"><Link to="/marie-wilcox">Marie Wilcox</Link><Link to="/simon-wilcox">Simon Wilcox</Link><a href={email}>Email Wilbucks</a><a href={linkedin} target="_blank" rel="noopener noreferrer">Marie on LinkedIn <ArrowUpRight size={14} /></a><a href={simonLinkedin} target="_blank" rel="noopener noreferrer">Simon on LinkedIn <ArrowUpRight size={14} /></a></div></div><div className="page-container footer-bottom"><span>© 2026 Wilbucks</span><a href="#main-content">Back to top ↑</a></div></footer>
+    <footer className="site-footer"><div className="page-container footer-top"><Link to="/" className="brand"><img src={logo.url} width="42" height="40" alt="" /><span>Wilbucks.</span></Link><div className="footer-links"><Link to="/marie-wilcox">Marie Wilcox</Link><Link to="/simon-wilcox">Simon Wilcox</Link><a href={email}>Email Wilbucks</a><a href={companyLinkedIn} target="_blank" rel="noopener noreferrer">Wilbucks on LinkedIn <ArrowUpRight size={14} /></a><a href={linkedin} target="_blank" rel="noopener noreferrer">Marie on LinkedIn <ArrowUpRight size={14} /></a><a href={simonLinkedin} target="_blank" rel="noopener noreferrer">Simon on LinkedIn <ArrowUpRight size={14} /></a></div></div>
+    <div className="page-container footer-details"><div><p className="footer-legal">{companyDetails.copyright}</p><p className="footer-legal">{companyDetails.legalName}</p><p className="footer-legal"><a href={companyDetails.website}>{companyDetails.websiteLabel}</a></p><p className="footer-legal">{companyDetails.registrationNumber}</p><p className="footer-legal">{companyDetails.vatNumber}</p></div><div><p className="footer-heading">Contact Information</p><p className="footer-legal">Email: <a href={email}>{companyDetails.email}</a></p></div><div><p className="footer-heading">Our Office Location</p>{companyDetails.office.map(line => <p key={line} className="footer-legal">{line}</p>)}</div></div>
+    <div className="page-container footer-bottom"><span>© 2026 Wilbucks Ltd</span><a href="#main-content">Back to top ↑</a></div></footer>
+
   </>;
 }
 
