@@ -35,6 +35,6 @@
 - [x] Run relevant tests and verify desktop, tablet and mobile copy and enquiry journeys without publishing.
 
 # Abstract motion visual refresh
-- [ ] Replace the homepage photograph with lightweight, custom animated signal forms and a richer teal-led palette.
-- [ ] Carry restrained visual motifs through Home while preserving copy, logo, routes and other pages.
-- [ ] Verify motion controls, reduced motion, navigation and desktop/tablet/mobile layouts; run relevant tests.
+- [x] Replace the homepage photograph with lightweight, custom animated signal forms and a richer teal-led palette.
+- [x] Carry restrained visual motifs through Home while preserving copy, logo, routes and other pages.
+- [x] Verify motion controls, reduced motion, navigation and desktop/tablet/mobile layouts; run relevant tests.
