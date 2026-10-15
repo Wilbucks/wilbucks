@@ -2,7 +2,7 @@
 export const SITE_URL = "https://www.wilbucks.com";
 
 /** Indexing stays off unless a launch build explicitly sets VITE_ALLOW_INDEXING=true. */
-export const allowIndexing = import.meta.env.VITE_ALLOW_INDEXING === "true";
+export const allowIndexing = import.meta.env["VITE_ALLOW_INDEXING"] === "true";
 
 export const absoluteUrl = (path: string) => (path === "/" ? `${SITE_URL}/` : `${SITE_URL}${path}`);
 
