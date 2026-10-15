@@ -38,3 +38,7 @@
 - [x] Replace the homepage photograph with lightweight, custom animated signal forms and a richer teal-led palette.
 - [x] Carry restrained visual motifs through Home while preserving copy, logo, routes and other pages.
 - [x] Verify motion controls, reduced motion, navigation and desktop/tablet/mobile layouts; run relevant tests.
+
+# Hero headline treatment
+- [x] Lead the hero with the approved headline instead of a large Wilbucks heading, shading each sentence white to pale teal to teal.
+- [x] Verify one line per sentence at phone, tablet and desktop widths, run tests and keep preview-only status.
