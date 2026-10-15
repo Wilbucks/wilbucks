@@ -14,7 +14,7 @@ export const homeFocus = [
   { title: "Validate and communicate the value proposition", copy: "Test the proposition against real customer needs, then express it in clear messaging buyers understand." },
   { title: "Choose how and when to reach people", copy: "Select the channels, communications and sales activity that reach the right people at the right time." },
   { title: "Develop the go-to-market and communications strategy", copy: "Bring markets, proposition, messaging and channels together in one practical plan." },
-  { title: "Align sales and marketing", copy: "Support the plan with sales planning and training so both teams work from the same proposition." },
+  { title: "Align sales and marketing", copy: "Support the plan with sales planning and training so both teams work from the same plan." },
 ];
 export const media = [
   { outlet: "The Guardian", title: "ASOS investigating after customers receive hacking notification", url: "https://www.theguardian.com/business/live/2026/oct/06/euro-france-central-bank-interest-rates-bonds-latest-live-updates?CMP=share_btn_url&page=with%3Ablock-6ac4cea68f083381b4684035", date: "6 October 2026", syndicated: false },
