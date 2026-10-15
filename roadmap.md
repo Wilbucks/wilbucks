@@ -64,3 +64,7 @@
 # Simon profile wording
 - [x] Remove all revenue, order-growth and pipeline figures from Simon's Experience narrative; use generic descriptions.
 - [x] Verify no figures appear in rendered text on desktop and phone, run tests, keep preview-only status.
+
+# Marie profile wording
+- [x] Remove the pipeline, media-impression and category-count figures from Marie's Experience narrative; keep the highlights in prose.
+- [x] Verify no achievement figures render on desktop and phone, run tests, keep preview-only status.
