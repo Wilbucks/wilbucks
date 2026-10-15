@@ -15,7 +15,7 @@ function About() {
   return <>
     <section className="page-heading profile-hero about-hero"><AboutField /><div className="page-container hero-enter about-opening">
       <p className="eyebrow">About Wilbucks</p>
-      <h1>Helping businesses turn great technology and services into growth<span className="text-primary">.</span></h1>
+      <h1>Helping businesses turn great technology and services <span className="text-primary">into growth.</span></h1>
       <p className="body-copy">We are a company set up to help SMEs and large organisations get the investment they need and really grow. Many organisations have great technology or services but communicate them poorly to their target markets, wasting money and resources and sometimes failing to succeed.</p>
       <p className="body-copy">Our business is founded on more than 20 years of B2B experience across sales and marketing, working in large corporates and small start-ups, including businesses backed by private equity and venture capital from Series A to Series C. We help deliver better value propositions, and marketing and sales strategies that actually deliver revenue and growth. Wilbucks is led by two directors, Marie Wilcox and Simon Wilcox.</p>
       <Button asChild variant="editorial" size="editorial" className="mt-6"><a href={email}>Talk to us <ArrowUpRight /></a></Button>
