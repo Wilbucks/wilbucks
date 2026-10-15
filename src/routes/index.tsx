@@ -18,8 +18,7 @@ function HomePage() {
       <SignalField />
       <div className="page-container hero-content">
         <p className="eyebrow hero-enter">Sales & marketing</p>
-        <h1 className="hero-enter">Wilbucks<span className="hero-stop">.</span></h1>
-        <p className="hero-statement hero-enter">Better value propositions.<br />Smarter routes to market.<br /><span>Growth that delivers.</span></p>
+        <h1 className="hero-statement hero-enter"><span className="hero-line hero-line-1">Better value propositions.</span><span className="hero-line hero-line-2">Smarter routes to market.</span><span className="hero-line hero-line-3">Growth that delivers.</span></h1>
         <p className="hero-description hero-enter">We help technology businesses understand their target markets and buyers, shape a value proposition and messaging that resonates, and reach the right people at the right time.</p>
         <p className="hero-description hero-enter">From go-to-market strategy and communications to sales planning and training, we help turn strong products and services into commercial results.</p>
         <div className="hero-actions hero-enter"><Button asChild variant="editorial" size="editorial"><Link to="/contact">Talk to us <ArrowUpRight /></Link></Button><TextLink to="/expertise">Areas of expertise</TextLink></div>
