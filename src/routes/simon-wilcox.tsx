@@ -9,15 +9,7 @@ import portrait from "@/assets/simon-wilcox.jpg.asset.json";
 
 const description = "Simon Wilcox is a sales and commercial leader and a director of Wilbucks, with a technology and security background.";
 
-const career = [
-  { company: "Daintta", role: "Government Client Group Director", dates: "May 2025 – present", copy: "Leads a £10m government client group, with responsibility for client relationships, growth and delivery across the portfolio." },
-  { company: "QinetiQ / Naimuri", role: "Data Intelligence Business Development Lead", dates: "May 2022 – May 2025", copy: "Led business development for data intelligence, growing the Homeland Security business from £2–3m to £8m." },
-  { company: "SecureCloud+", role: "Head of Product Strategy", dates: "July 2020 – May 2022", copy: "Shaped product strategy for secure cloud services, doubling pipeline and growing revenue to more than £20m." },
-  { company: "BAE Systems Applied Intelligence", role: "International Business Development Director", dates: "January 2013 – May 2020", copy: "Held a £40m+ target across international markets and delivered order growth of more than 35%." },
-  { company: "BAE Systems Detica", role: "Sales and business development roles", dates: "2003 – 2012", copy: "Progressed through sales and business development roles, helping grow sales from £9m to £27m." },
-  { company: "Categoric Software", role: "Senior Software Engineer", dates: "2000 – 2003", copy: "Senior software engineering role in a growing technology business." },
-  { company: "GCHQ", role: "Engineering and software roles", dates: "1991 – 2000", copy: "Began his career in engineering and software roles within the UK intelligence community." },
-];
+const careerNames = ["Daintta", "QinetiQ / Naimuri", "SecureCloud+", "BAE Systems Applied Intelligence", "BAE Systems Detica", "Categoric Software", "UK Government"];
 
 export const Route = createFileRoute("/simon-wilcox")({ head: () => pageHead("Simon Wilcox | Sales & Commercial Leadership | Wilbucks", description, "/simon-wilcox", { "@type": "ProfilePage", name: "Simon Wilcox", description, mainEntity: simonPerson }), component: Simon });
 function Simon() {
