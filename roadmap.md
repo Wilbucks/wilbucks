@@ -42,3 +42,8 @@
 # Hero headline treatment
 - [x] Lead the hero with the approved headline instead of a large Wilbucks heading, shading each sentence white to pale teal to teal.
 - [x] Verify one line per sentence at phone, tablet and desktop widths, run tests and keep preview-only status.
+
+# Homepage labels and About Us restoration
+- [x] Apply requested homepage labels and remove unwanted eyebrows/links without changing the design or artwork.
+- [x] Restore About Us and navigation, retain approved company copy, omit Working Principles/disclaimer and add grounded AI paragraph.
+- [x] Verify four-page navigation, retired redirects, desktop/mobile layouts and tests in preview only.

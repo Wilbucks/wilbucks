@@ -9,7 +9,7 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Use company content routes, a directors directory, separate person profiles and a curated media route under the shared Wilbucks shell because company identity must remain distinct from individual reputations.
+- Keep company pages and separate director profiles under the shared Wilbucks shell, with retired content routes redirecting home, because company identity must remain distinct from individual reputations and old links must still resolve.
 - Define editorial styling and semantic colors in the global stylesheet and use Button variants for actions to keep presentation consistent.
 - Keep profile structured data limited to supplied identity and expertise; use relative canonical metadata until the final integration path is confirmed.
 - Keep browser-safe typed content and metadata in shared modules so expertise and verified media remain consistent across pages without a database.
