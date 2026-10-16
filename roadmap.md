@@ -74,3 +74,8 @@
 - [x] ProfessionalService + Person + WebSite/AboutPage/ProfilePage JSON-LD
 - [x] Four-page launch sitemap/robots generator; retired routes 301 home
 - [x] About "Who we work with" paragraph
+
+## GitHub Pages test preparation
+- [ ] Add manual-only static build/deployment workflow with noindex and no custom-domain changes.
+- [ ] Verify prerendered routes, portable media, tests and existing preview.
+- [ ] Document GitHub Pages settings and remaining deployment verification.

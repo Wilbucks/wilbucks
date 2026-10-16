@@ -18,3 +18,4 @@
 - Keep media authorship category and publication-time attribution in typed records so personal bylines, quoted commentary and company coverage cannot be silently conflated.
 - Keep profile media selections and distinct professional appointments in browser-safe records, rendering media as compact lists, so attribution and organisation boundaries remain testable without a database.
 - Keep homepage artwork in a browser-mounted Canvas 2D component with CSS palette tokens, bounded resolution and visibility/reduced-motion guards, so motion needs no external assets or rendering dependency.
+- GitHub Pages tests use opt-in prerendering, a shared Vite/router base and an exported static client directory; manual deployment rejects an existing custom domain and keeps noindex so test hosting cannot replace production.
