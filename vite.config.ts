@@ -6,8 +6,8 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-const pagesTest = process.env.VITE_GITHUB_PAGES_TEST === "true";
-const base = pagesTest ? (process.env.VITE_SITE_BASE || "/") : "/";
+const pagesTest = process.env["VITE_GITHUB_PAGES_TEST"] === "true";
+const base = pagesTest ? (process.env["VITE_SITE_BASE"] || "/") : "/";
 
 export default defineConfig({
   vite: { base },
@@ -16,9 +16,8 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
-    ...(pagesTest ? {
-      pages: ["/", "/about", "/marie-wilcox", "/simon-wilcox"].map((path) => ({ path })),
-      prerender: { enabled: true, autoStaticPathsDiscovery: false, autoSubfolderIndex: true, crawlLinks: false, failOnError: true, concurrency: 2 },
-    } : {}),
+    // Every public page is visitor-independent and safe to render to static HTML.
+    pages: ["/", "/about", "/marie-wilcox", "/simon-wilcox"].map((path) => ({ path })),
+    prerender: { enabled: true, autoStaticPathsDiscovery: false, autoSubfolderIndex: true, crawlLinks: false, failOnError: true, concurrency: 2 },
   },
 });
