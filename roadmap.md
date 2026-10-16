@@ -21,7 +21,7 @@
 - [x] Include older and recent authored/quoted media with historical attribution, including the three supplied sources.
 - [x] Update metadata, shared navigation, director entities and launch-only notes.
 - [x] Verify page journeys, contact links, mobile layouts and tests without publishing.
-- [ ] Await sources for BBC Newsnight, Mirror and inaccessible Featured items; await Simon's expanded biography confirmation.
+- [ ] Await sources for BBC Newsnight, Mirror and inaccessible Featured items; these remain excluded from public claims.
 
 # Approved direct-copy revision
 - [x] Replace generic wording across all eight pages and shared contact/footer copy.
@@ -76,6 +76,7 @@
 - [x] About "Who we work with" paragraph
 
 ## GitHub Pages test preparation
-- [ ] Add manual-only static build/deployment workflow with noindex and no custom-domain changes.
-- [ ] Verify prerendered routes, portable media, tests and existing preview.
-- [ ] Document GitHub Pages settings and remaining deployment verification.
+- [x] Add manual-only static build/deployment workflow with noindex and no custom-domain changes.
+- [x] Verify existing preview on desktop/mobile, portable image availability, tests and automatic build checks.
+- [x] Document GitHub Pages settings and remaining deployment verification.
+- [ ] Confirm GitHub-runner static output and direct Pages links after the user enables Pages and manually runs the workflow; no deployment was triggered during preparation.
