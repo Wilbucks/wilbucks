@@ -1,16 +1,31 @@
 # Wilbucks launch checklist
 
-This is an unpublished integration preview. No live-site, domain or DNS change is authorised.
+**No DNS, custom-domain or live-site change may happen until the owner explicitly approves the launch.** Nothing below has been run against production. Redirects are not live until tested on www.wilbucks.com.
 
-- Confirm current company/legal details and the public business email before adding them to the new site.
+## Production launch (future, approval only)
+
+Pages: `/`, `/about`, `/marie-wilcox`, `/simon-wilcox`. Canonicals, og:url and JSON-LD `@id`s already point at `https://www.wilbucks.com` in every build (`src/lib/page-head.ts`).
+
+1. Build at root with indexing deliberately on (all three variables required):
+   ```
+   VITE_STATIC_EXPORT=true VITE_SITE_BASE=/ VITE_ALLOW_INDEXING=true bun run build
+   WILBUCKS_TARGET=production VITE_SITE_BASE=/ VITE_ALLOW_INDEXING=true node launch/prepare-pages.mjs
+   ```
+   The prepare step refuses production unless base is `/` and indexing is `true`, and refuses indexing on any non-production export. It checks each page for `index, follow`, its production canonical and exactly one h1, exports the logo and portraits into `dist/client/__l5e/...`, and writes `robots.txt` (with `Sitemap: https://www.wilbucks.com/sitemap.xml`) and `sitemap.xml` (four URLs). `launch/generate-search-files.py <origin> <dir>` produces the same two files for another approved origin.
+2. Upload only `dist/client` to the chosen host. No server is needed at runtime.
+3. Host-level redirects (configure on the approved host, not applied anywhere yet):
+   - `wilbucks.com/*` → `https://www.wilbucks.com/:path` 301, and `http://` → `https://` 301.
+   - `/expertise`, `/directors`, `/press-coverage`, `/contact` (with or without trailing slash) → `/` 301.
+   - Netlify/Cloudflare Pages `_redirects` example: `/expertise  /  301` (one line per path). Nginx: `location ~ ^/(expertise|directors|press-coverage|contact)/?$ { return 301 /; }`.
+   - The export also contains noindex HTML fallbacks at those paths for hosts that cannot send 301s (GitHub Pages). Real 301s are preferred and take precedence where supported.
+4. Verify on production: each page opens directly and on refresh; `curl -I` shows 301 for the four legacy paths and the apex; page source shows `index, follow` and the self canonical; `/robots.txt` and `/sitemap.xml` load; images and logo load; validate JSON-LD in Google's Rich Results Test; check phone layout. Then submit the sitemap in Google Search Console and Bing Webmaster Tools.
+
+## Open items before launch
+
 - Confirm whether the Mailchimp contact form and newsletter have active users or required delivery workflows. Direct email links currently replace neither live function.
-- Choose the final hosting/integration path and obtain explicit launch approval.
-- Final architecture is four pages: `/`, `/about`, `/marie-wilcox`, `/simon-wilcox`. `/expertise`, `/directors`, `/press-coverage` and `/contact` return 301 redirects to `/`.
-- Canonicals, og:url and JSON-LD already point at https://www.wilbucks.com (`src/lib/page-head.ts`). On approved launch, build with `VITE_ALLOW_INDEXING=true` to switch robots meta from noindex to index. Leave it unset everywhere else.
-- Generate the production XML sitemap with the four live pages at the final origin using `python3 launch/generate-search-files.py <approved-https-origin> <output-directory>`. Do not expose a placeholder or live-Mailchimp sitemap in this preview.
-- Production robots.txt: allow crawling and reference the final absolute sitemap URL. The preview allows crawlers to read its noindex metadata and does not advertise a production sitemap.
-- Recheck media links, portrait, keyboard navigation, contact links, mobile layouts and performance on the final host.
-- Existing reCAPTCHA, newsletter popup, cookie notice, info@wilbucks.com, company registration 12657721 and VAT 352 5364 05 were observed during the audit, not verified as current. No form submissions or live changes were made.
+- Choose the final host and obtain explicit launch approval.
+- Images are copied from the Lovable preview at build time; the preview must stay reachable for the build, or the files should be committed locally first.
+- Existing reCAPTCHA, newsletter popup and cookie notice on the live site were observed during the audit, not verified as current. No form submissions or live changes were made.
 
 ## Media evidence
 
