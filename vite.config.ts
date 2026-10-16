@@ -6,7 +6,8 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-const pagesTest = process.env["VITE_GITHUB_PAGES_TEST"] === "true";
+// Static export: the GitHub Pages test (VITE_GITHUB_PAGES_TEST) or a future approved production export (VITE_STATIC_EXPORT).
+const pagesTest = process.env["VITE_GITHUB_PAGES_TEST"] === "true" || process.env["VITE_STATIC_EXPORT"] === "true";
 const base = pagesTest ? (process.env["VITE_SITE_BASE"] || "/") : "/";
 
 export default defineConfig({
