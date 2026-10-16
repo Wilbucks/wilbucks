@@ -13,6 +13,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     env:
       VITE_GITHUB_PAGES_TEST: 'true'
       # Repository test URL only. The Vite default remains / for a future root custom-domain host.

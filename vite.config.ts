@@ -11,7 +11,9 @@ const base = pagesTest ? (process.env["VITE_SITE_BASE"] || "/") : "/";
 
 export default defineConfig({
   vite: { base },
-  ...(pagesTest ? { nitro: { preset: "node-server", output: { dir: "dist", publicDir: "dist/client", serverDir: "dist/server" } } } : {}),
+  // Keep the default worker preset: node-server starts a listener with no fetch handler,
+  // so prerendering fails and the build never exits. Only dist/client is deployed.
+  ...(pagesTest ? { nitro: { output: { dir: "dist", publicDir: "dist/client", serverDir: "dist/server" } } } : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
