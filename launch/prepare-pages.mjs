@@ -33,28 +33,11 @@ export function redirectDocument(base) {
 async function prepare() {
   const output = 'dist/client';
   const { target, base, robotsMeta } = resolveTarget(process.env);
-  // Export exact immutable assets. The static site must not depend on Lovable's asset proxy.
-  for (const file of await readdir('src/assets')) {
-    if (!file.endsWith('.asset.json')) continue;
-    const asset = JSON.parse(await readFile(join('src/assets', file), 'utf8'));
-    if (!/^\/__l5e\/assets-v1\/[A-Za-z0-9-]+\/[A-Za-z0-9._-]+$/.test(asset.url)) throw new Error(`Unexpected asset path: ${file}`);
-    const response = await fetch(`https://id-preview--da48fb2c-933a-488e-8c28-c903fdb6da29.lovable.app${asset.url}`);
-    if (!response.ok || !response.headers.get('content-type')?.startsWith('image/')) throw new Error(`Cannot export image ${file}: ${response.status}`);
-    const dest = join(output, asset.url.slice(1));
-    await mkdir(join(dest, '..'), { recursive: true });
-    await writeFile(dest, Buffer.from(await response.arrayBuffer()));
+  // Images are committed under src/assets and bundled by Vite with the configured base; no remote fetch.
+  const assetFiles = await readdir(join(output, 'assets'));
+  for (const name of ['wilbucks-logo', 'marie-wilcox', 'simon-wilcox']) {
+    if (!assetFiles.some((f) => f.startsWith(name) && /\.(png|jpe?g)$/.test(f))) throw new Error(`Bundled image missing: ${name}`);
   }
-  async function rewrite(directory) {
-    for (const entry of await readdir(directory, { withFileTypes: true })) {
-      const path = join(directory, entry.name);
-      if (entry.isDirectory()) await rewrite(path);
-      else if (/\.(html|js)$/.test(entry.name) && base !== '/') {
-        const text = await readFile(path, 'utf8');
-        await writeFile(path, text.replaceAll('/__l5e/assets-v1/', `${base}__l5e/assets-v1/`));
-      }
-    }
-  }
-  await rewrite(output);
   for (const path of livePaths) {
     const html = await readFile(join(output, path.slice(1), 'index.html'), 'utf8');
     if (!html.includes(`content="${robotsMeta}"`)) throw new Error(`Robots meta "${robotsMeta}" missing: ${path}`);

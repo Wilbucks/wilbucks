@@ -11,7 +11,7 @@ Pages: `/`, `/about`, `/marie-wilcox`, `/simon-wilcox`. Canonicals, og:url and J
    VITE_STATIC_EXPORT=true VITE_SITE_BASE=/ VITE_ALLOW_INDEXING=true bun run build
    WILBUCKS_TARGET=production VITE_SITE_BASE=/ VITE_ALLOW_INDEXING=true node launch/prepare-pages.mjs
    ```
-   The prepare step refuses production unless base is `/` and indexing is `true`, and refuses indexing on any non-production export. It checks each page for `index, follow`, its production canonical and exactly one h1, exports the logo and portraits into `dist/client/__l5e/...`, and writes `robots.txt` (with `Sitemap: https://www.wilbucks.com/sitemap.xml`) and `sitemap.xml` (four URLs). `launch/generate-search-files.py <origin> <dir>` produces the same two files for another approved origin.
+   The prepare step refuses production unless base is `/` and indexing is `true`, and refuses indexing on any non-production export. It checks each page for `index, follow`, its production canonical and exactly one h1, confirms the committed logo and portraits are bundled locally in `dist/client/assets/` (no remote image fetch), and writes `robots.txt` (with `Sitemap: https://www.wilbucks.com/sitemap.xml`) and `sitemap.xml` (four URLs). `launch/generate-search-files.py <origin> <dir>` produces the same two files for another approved origin.
 2. Upload only `dist/client` to the chosen host. No server is needed at runtime.
 3. Host-level redirects (configure on the approved host, not applied anywhere yet):
    - `wilbucks.com/*` → `https://www.wilbucks.com/:path` 301, and `http://` → `https://` 301.
