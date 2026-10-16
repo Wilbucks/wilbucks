@@ -22,3 +22,25 @@ Wilbucks is the company; Marie and Simon are its two directors. Simon's expanded
 Older authored sources include Infosecurity (2018), Rail Technology Magazine (2019) and Intersec (limited preview, June 2019). Cisco Investments guest article checked against publisher and indexed content (2025).
 The supplied Solutions Review article (2023) and Computer Weekly feature (2024) blocked direct inspection with 403; retain the user's exact attribution with indexed/related corroboration, not a claim of full independent verification. Cyber insurance feature (2025) was directly accessible. Historical employer and board descriptions on media items are not current appointment claims.
 LinkedIn Featured cards and their outbound destinations remain inaccessible. BBC Newsnight, Mirror and the additional SourceSecurity candidate are not public entries pending source confirmation. The uploaded workbook contains only ASOS reporting dated 6 to 8 October 2026.
+
+## GitHub Pages test (not production launch)
+
+Prepared workflow: `.github/workflows/wilbucks-pages-test.yml`. It has **only** a manual `workflow_dispatch` trigger, not a push trigger. Existing workflows must remain intact. No `CNAME` is supplied and no domain is configured.
+
+1. Confirm these source changes have synced into **Wilbucks/wilbucks**, on its default branch. Lovable Git sync is separate from the GitHub API connector; the editor's Project Settings → Git shows sync status. This preparation does not push or run GitHub Actions.
+2. In **GitHub Settings → Pages**, choose **Source: GitHub Actions**. Leave **Custom domain empty**. Do not remove an existing production domain to make this test work: stop and use an isolated test repository instead if Pages already hosts production. The workflow refuses deployment if Pages reports a custom domain or a URL outside `https://wilbucks.github.io/`.
+3. If required by your organisation, allow Actions and the official Pages actions under **Settings → Actions → General**. Allow the `github-pages` environment to deploy from the selected branch, and optionally add a required reviewer.
+4. When ready for the public *test URL only*, open **Actions → Wilbucks GitHub Pages test → Run workflow**. Nothing is automatically deployed by adding this workflow. The expected test address is `https://wilbucks.github.io/wilbucks/`; an already-existing Pages test site would be replaced by this manual run.
+
+### Build behaviour
+
+- Default Vite base is `/`, suitable for eventual root-of-custom-domain hosting. The isolated repository test explicitly supplies `/wilbucks/`; TanStack Router and the favicon use the same base so assets, navigation and direct page opens work at the GitHub address.
+- All four public pages are prerendered as `index.html`, `about/index.html`, `marie-wilcox/index.html`, and `simon-wilcox/index.html`. Only `dist/client` is uploaded, never the server bundle. GitHub Pages may normalise direct links to a trailing slash; production canonicals remain unchanged.
+- CI uses Node 22, Bun 1.3.10, the frozen lockfile, existing tests, and `bun run build`. `launch/prepare-pages.mjs` validates static content, noindex and canonicals, exports the original immutable portrait/logo files into the static artifact, and makes their URLs base-aware. Image export fails closed if an asset is unavailable; no credentials are needed and no image or design is replaced.
+- The Pages build uses a Node build-time SSR bundle to prerender, but requires no server at runtime. Server functions would need a separate hosting solution if added later.
+- `VITE_ALLOW_INDEXING=false` stays explicit. The four canonical and social URLs still point at `https://www.wilbucks.com`. Test robots allows crawling so crawlers can see **noindex**; it advertises no sitemap. Production sitemap/robots generation remains a separate, approval-only launch task.
+- GitHub Pages cannot send per-route HTTP 301 responses. The four retired paths receive tiny noindex HTML redirects to the test homepage (meta refresh plus `location.replace` and a fallback link). The existing TanStack 301 guards remain unchanged on server-backed hosting. No generic homepage-as-404 fallback is added.
+
+### Verification limits and post-run checks
+
+The local existing preview and tests can be checked without deployment. The actual GitHub-runner static build, Pages permissions and final Pages URLs must be confirmed in the first manual workflow run; repository Settings and sync status are not accessible through the project filesystem. After that run, open and refresh all four test URLs, check portraits/logo and pause controls, and confirm noindex, production canonicals and retired-path redirects. Do not set a custom domain or enable indexing during this test.
